@@ -1,6 +1,7 @@
 # sistema_de_controle_de_material_de_apoio_SCMA
 
 Tutorial para instalação e configuração do git 
+
     https://www.webdevdrops.com/git-no-windows-github/
 
 Tutorial de Django
@@ -17,4 +18,4 @@ Tutorial de Django
 
     https://www.youtube.com/watch?v=Z4D3M-NSN58&list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9
 
-    
+
