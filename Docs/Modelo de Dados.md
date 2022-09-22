@@ -10,25 +10,27 @@ Para a modelagem pode se usar o Astah UML ou o BrModelo. Uma ferramenta interess
 
 ```mermaid
 classDiagram
-      Animal <|-- Duck
-      Animal <|-- Fish
-      Animal <|-- Zebra
-      Animal : +int age
-      Animal : +String gender
-      Animal: +isMammal()
-      Animal: +mate()
-      class Duck{
-          +String beakColor
-          +swim()
-          +quack()
+      Usuario <|-- Administrador
+      Usuario <|-- Docente
+      Usuario : +int matricula
+      Usuario : +String senha
+      Usuario : +isAdm()
+
+      class Administrador{
+        +bool is_adm
+        +cadastrar_kit()
+        +remover_kit()
+        +alterar_kit()
+        +listar_kit()
       }
-      class Fish{
-          -int sizeInFeet
-          -canEat()
+      class Docente{
+        +pullout()
+        +put()
       }
-      class Zebra{
-          +bool is_wild
-          +run()
+      class Kit{
+        +int codigo
+        +String descricao
+        +bool is_using
       }
 ```
 
