@@ -15,9 +15,10 @@ Márlem      | Gerente, Desenvolvedor | marlem.magno@gmail.com
 
 Membro     |     Competências   |
 ---------  | ----------- |
-Ana Paula  | Desenvolvedor Java, Junit, Eclipse, JSP, JSF, Hibernate, Matemática, Latex, etc |
-Hiago      | Gestão, Geográfa |
+Ana Paula  | Gestão de RH, Desenvolvedor Python, Administração |
+Hiago      | Desenvolvedor Java,cursando graduação em Sistema de informação  |
 Márlem     | Analista de redes, cursando graduação em Sistema de informação |
+
 
 ## Perfis dos Usuários
 
