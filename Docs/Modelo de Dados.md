@@ -18,19 +18,23 @@ classDiagram
 
       class Administrador{
         +bool is_adm
-        +cadastrar_kit()
-        +remover_kit()
-        +alterar_kit()
-        +listar_kit()
       }
       class Docente{
         +pullout()
         +put()
       }
-      class Kit{
-        +int codigo
-        +String descricao
-        +bool is_using
+      class Sala_de_Apoio{
+        +cadastrarUser()
+        +alterarUser()
+        +listarUsers()
+        +removerUser()
+      }
+      class Armario{
+        +int[] kit
+        +cadastrarKit()
+        +removerKit()
+        +alterarKit()
+        +listarKits()
       }
 ```
 
@@ -40,10 +44,11 @@ Descrição sucinta das entidades presentes no sistema.
 
 | Entidade | Descrição   |
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Animal   | Entidade abstrata para representar informações gerais dos Animais: age, gender, isMammal(), mate().                                                  |
-| Duck     | Entidade que representa um Pato tem as informações: String beakColor, +swim(), +quack(). A classe Duck estende a classe abstrata Animal. |
-| Fish     | Entidade que representa um Peixe tem as informações: sizeInFeet, -canEat(). A classe Peixe estende a classe abstrata Animal.                                                                   |
-| Zebra    | Entidade que representa um Zebra tem as informações is_wild, run(). A classe Zebra estende a classe abstrata Animal.                                                                   |
+| Usuario   | Entidade abstrata para representar informações gerais dos usuarios: matricula, senha, isAdm().        |
+| Administrador     | Entidade que representa um administrador que tem a informação de +bool is_adm. A classe Administrador estende a classe abtrata Usuario. |
+| Docente     | Entidade que representa um Docente tem as informações: +pullout(), +put(). A classe Docente estende a classe abstrata Usuario.  |
+|Armario| Entidade que representa um Armario tem as informações de +int kit,+cadastrarKit(), +removerKit(), alterarKit(), listarKits.|
+|Sala_de_Apoio| Entidade que representa a Sala de Apoio, tem as funções de +cadastrarUser(), +alterarUser(), +listarUser(), +removerUser().|
 
 ## Modelo de Dados (Entidade-Relacionamento)
 
@@ -51,33 +56,24 @@ Para criar modelos ER é possível usar o BrModelo e gerar uma imagem. Contudo, 
 
 ```mermaid
 erDiagram
-    Departamento ||--o{ Laboratorio : labs
-    Departamento ||--|{ Docente : docentes
-    Docente ||--o| Laboratorio : coordenador
-    Docente ||--o| Laboratorio : vice-coordenador
-    Laboratorio ||--o{ Membro_Docente : membros
-    Docente ||--|{ Membro_Docente : ""
-    Laboratorio ||--o{ Membro_Discente : membros
-    Membro_Discente }|--|| Discente: ""
+    Usuario ||--| Administrador : adm
+    Usuario ||--o{ Docente : docentes
+    Administrador ||--|| Armario : armario
+    Docente }|--|| Armario : kits
+    Sala_de_Apoio ||--|| Armario : ""
+    Sala_de_Apoio ||--|{ Usuario : ""
 ```
 
 ### Dicionário de Dados
 
-|   Tabela   | Laboratório |
-| ---------- | ----------- |
-| Descrição  | Armazena as informações de um laboratório acadêmico. |
-| Observação | Laboratórios acadêmicos podem ser de Ensino, Pesquisa, Extensão, P&D, etc. |
+|   Tabela   | Sala_de_Apoio  |
+| ---------- | -------------- |
+| Descrição  | Mantém os usuários podendo adicionar, alterar, remover e listar  |
+| Observação | Apenas o Administrador vai poder adicionar os usuarios no sistema |
 
 |  Nome         | Descrição                        | Tipo de Dado | Tamanho | Restrições de Domínio |
 | ------------- | -------------------------------- | ------------ | ------- | --------------------- |
 | codigo        | identificador gerado pelo SGBD   | SERIAL       | ---     | PK / Identity |
-| sigla         | representação em sigla do lab    | VARCHAR      | 15      | Unique / Not Null |
-| nome          | nome do laboratório              | VARCHAR      | 150     | Not Null |
-| descricao     | detalhes sobre o laboratório     | VARCHAR      | 250     | --- |
-| endereco      | endereço e localização do lab    | VARCHAR      | 150     | --- |
-| data_criacao  | data de criação do lab           | DATE         | ---     | Not Null |
-| portaria      | portaria de criação do lab       | VARCHAR      | 50      | --- |
-| link_portaria | URL para a portaria (PDF)        | VARCHAR      | 150     | --- |
-| site          | URL para o site do laboratório   | VARCHAR      | 150     | --- |
-| e-mail        | e-mail de contato do laboratório | VARCHAR      | 150     | --- |
-| departamento  | departamento vinculado ao lab    | SERIAL       | ---     | FK / Not Null |
+| matricula do usuario         | matricula para idenficar o usuario     | VARCHAR      | 15      | Unique / Not Null |
+| senha do usuario          | senha do usuario              | VARCHAR      | 16     | Not Null |
+|   kit   | codigo referente a cada kit    | VARCHAR      | 250     | --- |

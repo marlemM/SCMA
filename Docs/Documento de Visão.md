@@ -42,7 +42,7 @@ Abaixo apresentamos o modelo conceitual usando o **YUML**.
 
  ![Modelo UML](yuml/monitoria-modelo.png)
 
-O código que gera o diagrama está [Aqui!](yuml/monitoria-yuml.md). O detalhamento dos modelos conceitual e de dados do projeto estão no [Documento de Modelos](doc-modelos.md).
+O código que gera o diagrama está [Aqui!](yuml/monitoria-yuml.md). O detalhamento dos modelos conceitual e de dados do projeto estão no [Documento de Modelos](Modelo de Dados.md).
 
 #### Descrição das Entidades
 

@@ -12,11 +12,11 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Data       | Versão  | Descrição                          | Autor                          |
 | :--------- | :-----: | :--------------------------------: | :----------------------------- |
-| 22/06/2020 | 0.0.1   | Template e descrição do documento  | Taciano |
-| 23/06/2020 | 0.0.2   | Detalhamento do User Story US01    | Taciano |
+| 22/10/2020 | 0.0.1   | Template e descrição do documento  | Márlem |
+| 23/10/2020 | 0.0.2   | Detalhamento do User Story US01    | Márlem |
 | ...        | ...     | ...                                | ...     |
-| 12/07/2020 | 1.0.0   | Documento completo com o detalhamento de todos os User Stories | Taciano     |
-| 30/04/2022 | 1.6.0   | Adição das informações da equipe: Analista, Desenvolvedor, Revisor e Testador. | Taciano |
+| 12/11/2020 | 1.0.0   | Documento completo com o detalhamento de todos os User Stories | Márlem     |
+| 20/11/2022 | 1.6.0   | Adição das informações da equipe: Analista, Desenvolvedor, Revisor e Testador. | Márlem |
 
 
 
@@ -24,7 +24,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
-| **Descrição** | O sistema deve manter um cadastro de usuário que tem acesso ao sistema via login e senha. Um usuário tem os atributos name, id, email, username, data de nascimento, tipo de usuário, status, password, avatarURL. O email será o login e ele pode registrar-se diretamente no sistema, o avatarURL é um link para uma foto de seu perfil. Além disso o usuário poderá alterar alguns dados, como o e-mail ou a senha. O usuário administrador do sistema pode realizar as operações de adicionar, alterar, remover e listar os usuários comuns do sistema. |
+| **Descrição** | A equipe vai colocar  |
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
@@ -40,10 +40,10 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Estimativa**            | 8 h                                 | 
 | **Tempo Gasto (real):**   |                                     | 
 | **Tamanho Funcional**     | 7 PF                                | 
-| **Analista**              | Taciano                             | 
-| **Desenvolvedor**         | Zé                                  | 
-| **Revisor**               | Maria                               | 
-| **Testador**              | Xuxa                                | 
+| **Analista**              | Márlem                              | 
+| **Desenvolvedor**         | Hiago                               | 
+| **Revisor**               | Márlem                              | 
+| **Testador**              | Ana Paula                           | 
 
 
 | Testes de Aceitação (TA) |  |
