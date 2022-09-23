@@ -56,7 +56,7 @@ Para criar modelos ER é possível usar o BrModelo e gerar uma imagem. Contudo, 
 
 ```mermaid
 erDiagram
-    Usuario ||--| Administrador : adm
+    Usuario ||--|| Administrador : adm
     Usuario ||--o{ Docente : docentes
     Administrador ||--|| Armario : armario
     Docente }|--|| Armario : kits
