@@ -1,5 +1,8 @@
 # sistema_de_controle_de_material_de_apoio_SCMA
 
+# Descrição
+O SCMA, é um sistema de controle que é responsável por gerenciar todo o material de apoio utilizados pelos docentes do Ceres Caicó, a fim de eliminar o controle destes materiais através de planilhas em papel , reduzindo o consumo de material , agilizando o processo e permitindo um maior controle do patrimônio.
+
 Tutorial para instalação e configuração do git 
 
     https://www.webdevdrops.com/git-no-windows-github/
