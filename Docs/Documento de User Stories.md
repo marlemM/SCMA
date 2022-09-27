@@ -22,19 +22,17 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 
 
 
-### User Story US01 - Manter Usuário
+### User Story US01 - Manter Centro
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
-| **Descrição** | A equipe vai colocar  |
+| **Descrição** | O usuário administrador faz o cadastro do centreo que tem código ,sigla , nome e endereço. |
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF01          | Cadastrar Usuário |
-| RF02          | Alterar Usuário  |
-| RF03          | Consultar Usuários        |
-| RF04          | Excluir Usuário |
-| RF05          | Vizualizar detalhes do Usuário |
+| RF01          | Cadastrar Centro |
+| RF02          | Alterar Centro  |
+| 
 
 |                           |                                     |
 | ------------------------- | ----------------------------------- | 
@@ -48,10 +46,61 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 | **Testador**              | Ana Paula                           | 
 
 
+### User Story US02 - Manter kit de Apoio
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | O kit de apoio tem código , descrição é cadastrado no sistema pelo usuário administrador que faz login e disponibiliza o kit para emprestimo. |
+
+| **Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF02          | Manter kit de apoio  |
+| 
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   |                                     | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | Márlem                              | 
+| **Desenvolvedor**         | Hiago                               | 
+| **Revisor**               | Márlem                              | 
+| **Testador**              | Ana Paula                           | 
+
+
+
+### User Story US03 - Manter Emprestimos
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | A partir do login e senha o usuário tem acesso ao sistema onde verifica a disponibilidade de kit e efetiva o empréstimo, após a utilização , repete o processo de login e efetiva a devolução do kit emprestado.  |
+
+| **Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF03          | Realizar emprestimo de kit de apoio       |
+| RF04          | Devolução de kit de apoio |
+| 
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   |                                     | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | Márlem                              | 
+| **Desenvolvedor**         | Hiago                               | 
+| **Revisor**               | Márlem                              | 
+| **Testador**              | Ana Paula                           | 
+
+
+
+
+
 | Testes de Aceitação (TA) |  |
 | ----------- | --------- |
 | **Código**      | **Descrição** |
 | **TA01.01** | Descrever o teste de aceitação 01 do US01 |
 | **TA01.02** | Descrever o teste de aceitação 02 do US01 |
 | **TA01.03** | Descrever o teste de aceitação 03 do US01 |
-| **TA01.04** | Descrever o teste de aceitação 04 do US01 |
+
