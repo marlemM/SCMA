@@ -1,33 +1,48 @@
 # Documento de Visão
 
-Documento construído a partido do **Modelo BSI - Doc 001 - Documento de Visão** que pode ser encontrado no
+Documento construído a partir do do **Modelo BSI - Doc 001 - Documento de Visão** que pode ser encontrado no
 link: https://docs.google.com/document/d/1DPBcyGHgflmz5RDsZQ2X8KVBPoEF5PdAz9BBNFyLa6A/edit?usp=sharing
+
+
+## Histórico de Revisões 
+
+Data       |    Versão   |   Descrição        |  Autor
+---------  | ----------- | ------------------ | ---------
+21/09/2022 | 1.0         | Documento inicial  |  Marlem
+22/09/2022 | 1.1         | Formatação do texto|  Ana Paula
+
 
 ## Equipe e Definição de Papéis
 
 Membro     |     Papel   |   E-mail   |
 ---------  | ----------- | ---------- |
+Taciano    | Cliente     | taciano@bsi.ufrn.br
 Ana Paula  | testador    | paulinha.texx@gmail.com
 Hiago      | Desenvolvedor, Analista | medeiroshiago70@gmail.com
-Márlem      | Gerente, Desenvolvedor | marlem.magno@gmail.com
+Márlem     | Gerente, Desenvolvedor | marlem.magno@gmail.com
 
 ### Matriz de Competências
 
 Membro     |     Competências   |
----------  | ----------- |
+---------  | ------------------ |
 Ana Paula  | Gestão de RH, Desenvolvedor Python, Administração |
 Hiago      | Desenvolvedor Java,cursando graduação em Sistema de informação  |
 Márlem     | Analista de redes, cursando graduação em Sistema de informação |
 
 
+## Descrição do Projeto
+
+O SCMA, é um sistema de controle que é responsável por gerenciar todo o material de apoio utilizados pelos docentes do Ceres Caicó, a fim de eliminar o controle destes materiais através de planilhas em papel , reduzindo o consumo de material , agilizando o processo e permitindo um maior controle do patrimônio.
+
+
 ## Perfis dos Usuários
 
-O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfis/atores:
+O sistema poderá ser utilizado por dois tipos de usuários. Temos os seguintes perfis/atores:
 
 Perfil                                 | Descrição   |
 ---------                              | ----------- |
 Administrador | Este usuário realiza os cadastros base e pode realizar qualquer função.
-Docentes | Este usuário pode retirar kit de apoio e realizar a devolução,etc.
+Docentes | Este usuário pode retirar kit de apoio e realizar a devolução,verificar disponibilidade de kit, etc.
 
 ## Lista de Requisitos Funcionais
 
@@ -66,3 +81,5 @@ Data | Risco | Prioridade | Responsável | Status | Providência/Solução |
 05/11/2022 | Implementação de protótipo com as tecnologias | Alto | Todos | Resolvido | Encontrar tutorial com a maioria da tecnologia e implementar um caso base do sistema |
 
 ### Referências
+
+https://github.com/tacianosilva/eng-software-2/blob/master/docs/doc-visao.md
