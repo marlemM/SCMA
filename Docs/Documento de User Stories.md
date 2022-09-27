@@ -6,17 +6,19 @@ link: https://docs.google.com/document/d/1Ns2J9KTpLgNOpCZjXJXw_RSCSijTJhUx4zgFhY
 
 ## Descrição
 
-Este documento descreve os User Stories criados a partir da Lista de Requisitos no [Documento 001 - Documento de Visão](doc-visao.md). Este documento também pode ser adaptado para descrever Casos de Uso. Modelo de documento baseado nas características do processo easYProcess (YP).
+Este documento descreve os User Stories criados a partir da Lista de Requisitos no [Documento 001 - Documento de Visão](doc-visao.md) do Sistema de Controle de Materiais de Apoio(SCMA) detalhando como será implementada cada funcionalidade deste sistema de acordo com o usuário.
+Modelo de documento baseado nas características do processo easYProcess (YP).
 
 ## Histórico de revisões
 
 | Data       | Versão  | Descrição                          | Autor                          |
 | :--------- | :-----: | :--------------------------------: | :----------------------------- |
-| 22/10/2020 | 0.0.1   | Template e descrição do documento  | Márlem |
-| 23/10/2020 | 0.0.2   | Detalhamento do User Story US01    | Márlem |
-| ...        | ...     | ...                                | ...     |
-| 12/11/2020 | 1.0.0   | Documento completo com o detalhamento de todos os User Stories | Márlem     |
-| 20/11/2022 | 1.6.0   | Adição das informações da equipe: Analista, Desenvolvedor, Revisor e Testador. | Márlem |
+| 21/09/2022 | 0.0.1   | Template e descrição do documento  | Márlem |
+| 22/09/2022 | 0.0.2   | Detalhamento do User Story US01    | Márlem |
+| 23/09/2022 | 0.0.3   | Atualização do Documento           | Ana Paula|
+| 25/09/2022 | 0.0.4   | Revisão                            | Hiago  |
+| 12/11/2022 | 1.0.0   | Documento completo com o detalhamento de todos os User Stories | Márlem     |
+|
 
 
 
