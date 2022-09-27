@@ -50,6 +50,8 @@ Requisito                                 | Descrição   | Ator |
 ---------                                 | ----------- | ---------- |
 RF001 - Manter um cadastro de Centros     | Um centro representa uma unidade administrativa da Universidade. Um centro tem código, nome, sigla, endereço e site. | Administrador |
 RF002 - Manter um cadastro de kit de apoio | Um kit de apoio tem código e descrição. | Administrador |
+RF003 - Realizar emprestimo de kit de apoio | Um emprestimo tem   login. código,data de emprestimo | Docente |
+RF004 - Devolução kit de apoio | Uma devolução  tem código e data de devolução. | docente |
 
 ### Modelo Conceitual
 
