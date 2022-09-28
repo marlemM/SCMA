@@ -4,8 +4,8 @@
 
 Iteração | Data início | Data Final | Apresentação | Gerente   | Detalhes
 -------- | ----------- | ---------- | ------------ | -------   | -------
-It1      |    ...      |    ...     |    ...       | Gerente 1 | Lista de atividades.
-It2      |    ...      |    ...     |    ...       | Gerente 2 | Lista de atividades.
+It1      |    ...      |    ...     |    ...       | Marlem    | Lista de atividades.
+It2      |    ...      |    ...     |    ...       | Ana Paula | Lista de atividades.
 It3      |    ...      |    ...     |    ...       | Gerente 3 | Lista de atividades.
 It4      |    ...      |    ...     |    ...       | Gerente 4 | Lista de atividades.
 It5      |    ...      |    ...     |    ...       | Gerente 5 | Lista de atividades.
