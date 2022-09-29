@@ -9,8 +9,8 @@ link: https://docs.google.com/document/d/1DPBcyGHgflmz5RDsZQ2X8KVBPoEF5PdAz9BBNF
 Data       |    Versão   |   Descrição        |  Autor
 ---------  | ----------- | ------------------ | ---------
 21/09/2022 | 1.0         | Documento inicial  |  Marlem
-22/09/2022 | 1.1         | Formatação do texto|  Ana Paula
-
+22/09/2022 | 1.1         | Formatação do texto |  Ana Paula
+29/09/2022 | 1.2         | Adição de requisitos | Hiago
 
 ## Equipe e Definição de Papéis
 
