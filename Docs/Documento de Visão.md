@@ -48,10 +48,15 @@ Docentes | Este usuário pode retirar kit de apoio e realizar a devolução,veri
 
 Requisito                                 | Descrição   | Ator |
 ---------                                 | ----------- | ---------- |
-RF001 - Manter um cadastro de Centros     | Um centro representa uma unidade administrativa da Universidade. Um centro tem código, nome, sigla, endereço e site. | Administrador |
+RF001 - Manter um cadastro de Centros | Um centro representa uma unidade administrativa da Universidade. Um centro tem código, nome, sigla, endereço e site. | Administrador |
 RF002 - Manter um cadastro de kit de apoio | Um kit de apoio tem código e descrição. | Administrador |
-RF003 - Realizar emprestimo de kit de apoio | Um emprestimo tem   login. código,data de emprestimo | Docente |
-RF004 - Devolução kit de apoio | Uma devolução  tem código e data de devolução. | docente |
+RF003 - Realizar emprestimo de kit de apoio | Um emprestimo tem login. código, data de emprestimo | Docente |
+RF004 - Devolução kit de apoio | Uma devolução  tem código e data de devolução. | Docente |
+RF005 - Realizar cadastro, alteração e exclusão de itens | Um objeto deve possuir cadastro com código próprio. | Administrador |
+RF006 - Realizar uma reserva do item ou kit | O docente deve ser capaz de reservar itens e kits. | Docente |
+RF007 - Deve haver um perfil com todas as informções sobre o usuário | deve preencher com dados importantes como matricula, nome, email, telefone e departamento (docente). | Todos |
+RF008 - O sistema deve possuir a escolha de login, o usuário deve se identificar como adminastrador, secretário ou docente | O administrador é unico que pode interagir com o banco de dados, sendo um super-usuário; O secretário pode cadastrar e editar itens e kits; O Docente pode somente procurar, reservar e pegar um item ou kit emprestado. | Todos |
+RF009 - Deve haver uma multa de três dias para cada dia de atraso na devolução | A multa é acumulativa, o docente não pode realizar emprestimos ou reservar enquanto estiver penalizado. | Docente |
 
 ### Modelo Conceitual
 
@@ -70,6 +75,7 @@ Requisito                                 | Descrição   |
 RNF001 - Deve ser acessível via navegador | Deve abrir perfeitamento no Firefox e no Chrome. |
 RNF002 - Consultas deve ser eficiente | O sistema deve executar as consultas em milessegundos |
 RNF003 - Log e histórico de acesso e funções | Deve manter um log de todos os acessos e das funções executadas pelo usuário |
+RNF004 - O Sistema deve ser limpo | Deve ser intuitivo e possuir um fácil manuseio. |
 
 ## Riscos
 
