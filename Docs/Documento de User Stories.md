@@ -22,16 +22,16 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 
 
 
-### User Story US01 - Manter Centro
+### User Story US01 - Cadastrar Centro
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
-| **Descrição** | O usuário administrador faz o cadastro do centreo que tem código ,sigla , nome e endereço. |
+| **Descrição** | O usuário administrador faz o cadastro do centro que tem código ,sigla , nome e endereço. |
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF01          | Cadastrar Centro |
-| RF02          | Alterar Centro  |
+| RF01          | Cadastro de  Centro |
+|
 | 
 
 |                           |                                     |
@@ -46,15 +46,37 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 | **Testador**              | Ana Paula                           | 
 
 
-### User Story US02 - Manter kit de Apoio
+### User Story US02 - Manter item de kit de Apoio
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
-| **Descrição** | O kit de apoio tem código , descrição é cadastrado no sistema pelo usuário administrador que faz login e disponibiliza o kit para emprestimo. |
+| **Descrição** | O item de kit de apoio tem código, descrição e equantidade disponível,  é cadastrado no sistema pelo usuário administrador que faz login e disponibiliza o item para emprestimo. |
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF02          | Manter kit de apoio  |
+| RF02          | Manter cadastro de  item de kit de apoio  |
+| 
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   |                                     | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | Márlem                              | 
+| **Desenvolvedor**         | Hiago                               | 
+| **Revisor**               | Márlem                              | 
+| **Testador**              | Ana Paula                           | 
+
+### User Story US03 - Manter kit de Apoio
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | O  kit de apoio tem código, descrição e equantidade disponível,  é cadastrado no sistema pelo usuário administrador que faz login e disponibiliza o kit para emprestimo. |
+
+| **Requisitos envolvidos** |                                                    |
+| ------------- | :------------------------------------------------------------- |
+| RF03          | Manter cadastro  de kit de apoio  |
 | 
 
 |                           |                                     |
@@ -70,17 +92,17 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 
 
 
-### User Story US03 - Manter Emprestimos
+### User Story US04 - Manter Emprestimos
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
-| **Descrição** | A partir do login e senha o usuário tem acesso ao sistema onde verifica a disponibilidade de kit e efetiva o empréstimo, após a utilização , repete o processo de login e efetiva a devolução do kit emprestado.  |
+| **Descrição** | A partir do login e senha o usuário tem acesso ao sistema onde verifica a disponibilidade de kit ou item e efetiva o empréstimo, após a utilização , repete o processo de login e efetiva a devolução do kit emprestado.  |
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF03          | Realizar emprestimo de kit de apoio       |
-| RF04          | Devolução de kit de apoio |
-| 
+| RF04          | Realizar emprestimo de kit de apoio       |
+| RF05          | Devolução de kit de apoio |
+| RF06          | Realizar Reserva     |
 
 |                           |                                     |
 | ------------------------- | ----------------------------------- | 
