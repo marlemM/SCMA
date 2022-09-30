@@ -37,22 +37,24 @@ O SCMA, é um sistema de controle que é responsável por gerenciar todo o mater
 
 ## Perfis dos Usuários
 
-O sistema poderá ser utilizado por dois tipos de usuários. Temos os seguintes perfis/atores:
+O sistema poderá ser utilizado por quatro tipos de usuários. Temos os seguintes perfis/atores:
 
 Perfil                                 | Descrição   |
 ---------                              | ----------- |
 Administrador | Este usuário realiza os cadastros base e pode realizar qualquer função.
+Secretário | Este usuário realiza empréstimos , reserva de kit ou item , verifica disponibilidade de material e necessidade de aquisição de materiais.
 Docentes | Este usuário pode retirar kit de apoio e realizar a devolução,verificar disponibilidade de kit, etc.
+Bolsista | Este usuário consulta disponibilidade de kit ou item ,realiza empréstimos e devoluções, não reserva e não tem acesso a base.
 
 ## Lista de Requisitos Funcionais
 
 Requisito                                 | Descrição   | Ator |
 ---------                                 | ----------- | ---------- |
-RF001 - Manter um cadastro de Centros | Um centro representa uma unidade administrativa da Universidade. Um centro tem código, nome, sigla, endereço e site. | Administrador |
-RF002 - Manter um cadastro de kit de apoio | Um kit de apoio tem código e descrição. | Administrador |
-RF003 - Realizar emprestimo de kit de apoio | Um emprestimo tem login. código, data de emprestimo | Docente |
-RF004 - Devolução kit de apoio | Uma devolução  tem código e data de devolução. | Docente |
-RF005 - Realizar cadastro, alteração e exclusão de itens | Um objeto deve possuir cadastro com código próprio. | Administrador |
+RF001 - Cadastro de Centro | Um centro representa uma unidade administrativa da Universidade. Um centro tem código, nome, sigla, endereço e site. | Administrador |
+RF002 - Manter um cadastro item de kit  | Um item  tem código, descrição e quantidde disponível | Administrador |
+RF003 - Manter um cadastro de kit de apoio | Um kit de apoio tem código, descrição e quantidade disponível | Administrador |
+RF004 - Realizar emprestimo de kit de apoio | Um emprestimo tem login. código, data de emprestimo | Docente |
+RF005 - Devolução kit de apoio | Uma devolução  tem código e data de devolução. | Docente |
 RF006 - Realizar uma reserva do item ou kit | O docente deve ser capaz de reservar itens e kits. | Docente |
 RF007 - Deve haver um perfil com todas as informções sobre o usuário | deve preencher com dados importantes como matricula, nome, email, telefone e departamento (docente). | Todos |
 RF008 - O sistema deve possuir a escolha de login, o usuário deve se identificar como adminastrador, secretário ou docente | O administrador é unico que pode interagir com o banco de dados, sendo um super-usuário; O secretário pode cadastrar e editar itens e kits; O Docente pode somente procurar, reservar e pegar um item ou kit emprestado. | Todos |
