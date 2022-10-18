@@ -22,3 +22,8 @@ Tutorial de Django
     https://www.youtube.com/watch?v=Z4D3M-NSN58&list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9
 
 
+
+
+
+
+C:\Users\proxx\Desktop\sonar-scanner-4.7.0.2747-windows\bin\sonar-scanner.bat -D sonar.login=b6d0bab1e972644439b6efc872720c910bdbdf3a
