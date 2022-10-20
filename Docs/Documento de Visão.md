@@ -50,15 +50,25 @@ Bolsista | Este usuário consulta disponibilidade de kit ou item ,realiza empré
 
 Requisito                                 | Descrição   | Ator |
 ---------                                 | ----------- | ---------- |
-RF001 - Cadastro de Centro | Um centro representa uma unidade administrativa da Universidade. Um centro tem código, nome, sigla, endereço e site. | Administrador |
-RF002 - Manter um cadastro item de kit  | Um item  tem código, descrição e quantidde disponível | Administrador |
-RF003 - Manter um cadastro de kit de apoio | Um kit de apoio tem código, descrição e quantidade disponível | Administrador |
-RF004 - Realizar emprestimo de kit de apoio | Um emprestimo tem login. código, data de emprestimo | Docente |
-RF005 - Devolução kit de apoio | Uma devolução  tem código e data de devolução. | Docente |
-RF006 - Realizar uma reserva do item ou kit | O docente deve ser capaz de reservar itens e kits. | Docente |
-RF007 - Deve haver um perfil com todas as informções sobre o usuário | deve preencher com dados importantes como matricula, nome, email, telefone e departamento (docente). | Todos |
-RF008 - O sistema deve possuir a escolha de login, o usuário deve se identificar como adminastrador, secretário ou docente | O administrador é unico que pode interagir com o banco de dados, sendo um super-usuário; O secretário pode cadastrar e editar itens e kits; O Docente pode somente procurar, reservar e pegar um item ou kit emprestado. | Todos |
-RF009 - Deve haver uma multa de três dias para cada dia de atraso na devolução | A multa é acumulativa, o docente não pode realizar emprestimos ou reservar enquanto estiver penalizado. | Docente |
+| RF001 - Cadastrar usuário | O sistema deve ser capaz de realizar um cadastro de usuário. | Administrador |
+| RF002 - Buscar usuário | Deve ser capaz de realizar uma busca com os dados do usuário. | Administrador |
+| RF003 - Alterar usuário | Deve ser possível editar informações cadastradas. | Administrador |
+| RF004 - Deletar usuário | Deve ser possível apagar um usuário cadastrado. | Administrador |
+| RF005 - Cadastrar item | O sistema deve ser capaz de cadastrar determinado item. | Secretário |
+| RF006 - Tipo do item | Durante o cadastro do item, deve ser possível escolher o tipo do item. | Secretário |
+| RF007 - Buscar item | Deve ser possível fazer uma busca entre os itens cadastrados no sistema. | Secretário, Docente |
+| RF008 - Alterar item | Deve ser possível alterar o as informações do item cadastrado. | Secretário |
+| RF009 - Excluir item | Deve ser possível excluir o item do sistema caso ele não esteja mais em posse do apoio pedagógico. | Secretário |
+| RF010 - Disponibilidade do item | Após o determinado item ser encontrado, o sistema deve exibir se eles está disponível para a reserva ou não. | Secretário, Docente |
+| RF011 - Reserva de item | O usuário deve ser capaz de realizar a reserva do item caso ele esteja disponível. | Docente |
+| RF012 - Kit padrão | O sistema deve possuir um kit pré-cadastrado. exemplo: kit básico. | Administrador, Secretário |
+| RF013 - Cadastrar kit | Deve ser possível fazer o cadastro de novos kits. que atenda as necessidades de determinado evento ou aula. | Secretário |
+| RF014 - Alterar kit | Deve ser possível alterar as informações de um kit já cadastrado. com a exceção do pré-cadastrado. | Secretário |
+| RF015 - Excluir kit | Deve ser possível excluir um kit antes cadastrado. | Secretário |
+| RF016 - Buscar kit | Deve ser possível pesquisar se determinado kit no sistema. Exemplo: kit aula. | Secretário, Docente |
+| RF017 - Disponibilidade do kit | Após a busca de determinado kit, o sistema deve exibir se o mesmo está disponível ou não | Secretário, Docente |
+| RF018 - Reserva de kit | O sistema deve ter a funcionalidade de fazer uma reserva de determinado kit, caso o mesmo esteja disponível. | Docente |
+| RF019 - Multa acumulativa | O sistema deve possuir um funcionalidade de multa caso o item ou kit não seja devolvido após o seu uso. | Secretário |
 
 ### Modelo Conceitual
 
