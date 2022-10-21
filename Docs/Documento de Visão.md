@@ -37,14 +37,13 @@ O SCMA, é um sistema de controle que é responsável por gerenciar todo o mater
 
 ## Perfis dos Usuários
 
-O sistema poderá ser utilizado por quatro tipos de usuários. Temos os seguintes perfis/atores:
+O sistema poderá ser utilizado por três tipos de usuários. Temos os seguintes perfis/atores:
 
 Perfil                                 | Descrição   |
 ---------                              | ----------- |
 Administrador | Este usuário realiza os cadastros base e pode realizar qualquer função.
 Secretário | Este usuário realiza empréstimos , reserva de kit ou item , verifica disponibilidade de material e necessidade de aquisição de materiais.
 Docentes | Este usuário pode retirar kit de apoio e realizar a devolução,verificar disponibilidade de kit, etc.
-Bolsista | Este usuário consulta disponibilidade de kit ou item ,realiza empréstimos e devoluções, não reserva e não tem acesso a base.
 
 ## Lista de Requisitos Funcionais
 
