@@ -4,9 +4,9 @@
 
 Iteração | Data início | Data Final | Apresentação | Gerente   | Detalhes
 -------- | ----------- | ---------- | ------------ | -------   | -------
-It1      |    ...      |    ...     |    ...       | Marlem    | Lista de atividades.
-It2      |    ...      |    ...     |    ...       | Ana Paula | Lista de atividades.
-It3      |    ...      |    ...     |    ...       | Gerente 3 | Lista de atividades.
+It1      |    ...      | 29/09/2022 |  29/09/2022  | Marlem    | Lista de atividades.
+It2      | 30/09/2022  | 13/10/2022 |  13/10/2022  | Ana Paula | Atualização de Documento de visão melhorando os RF's , User Stories e CRUD's
+It3      | 14/10/2022  |    ...     |    ...       | Hiago     | Lista de atividades.
 It4      |    ...      |    ...     |    ...       | Gerente 4 | Lista de atividades.
 It5      |    ...      |    ...     |    ...       | Gerente 5 | Lista de atividades.
 It6      |    ...      |    ...     |    ...       | Gerente 6 | Lista de atividades.
