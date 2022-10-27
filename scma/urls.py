@@ -1,4 +1,4 @@
-"""SCMA URL Configuration
+"""scma URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -13,15 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from re import template
 from django.contrib import admin
 from django.urls import path
+from re import template
 from django.views.generic import TemplateView
+from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('docente/',TemplateView.as_view(template_name='docente.html')),
-    path('coisa/',TemplateView.as_view(template_name='coisa.html')),
-    path(r'^$', TemplateView.as_view(template_name='home.html')),
-    path('Home/', TemplateView.as_view(template_name='home.html')),
+    path('home/', TemplateView.as_view(template_name='home.html')),
+    path('', RedirectView.as_view(url='home/')),
 ]

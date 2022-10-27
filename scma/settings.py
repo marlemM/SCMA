@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'SCMA.urls'
+ROOT_URLCONF = 'scma.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'SCMA.wsgi.application'
+WSGI_APPLICATION = 'scma.wsgi.application'
 
 
 # Database
