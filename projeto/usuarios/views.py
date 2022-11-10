@@ -18,6 +18,5 @@ def cadastro(request):
         
         return HttpResponse(username)
         
-
 def login(request):
     return render(request, 'login.html')
