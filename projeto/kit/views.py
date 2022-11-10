@@ -26,3 +26,7 @@ def delete(request, id):
     kit = Kit.objects.get(id=id)
     kit.delete()
     return redirect(home)
+
+def detalhar(request):
+    kits = Kit.objects.all()
+    return render(request, "detalhar.html", {"kits": kits})
