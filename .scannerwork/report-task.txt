@@ -2,5 +2,5 @@ projectKey=scma
 serverUrl=http://labens.dct.ufrn.br/sonarqube
 serverVersion=9.4.0.54424
 dashboardUrl=http://labens.dct.ufrn.br/sonarqube/dashboard?id=scma
-ceTaskId=AYPRgZo7npYdXIc-xpjD
-ceTaskUrl=http://labens.dct.ufrn.br/sonarqube/api/ce/task?id=AYPRgZo7npYdXIc-xpjD
+ceTaskId=AYRe8aS3kU6jusz3Gg8Q
+ceTaskUrl=http://labens.dct.ufrn.br/sonarqube/api/ce/task?id=AYRe8aS3kU6jusz3Gg8Q
