@@ -17,8 +17,8 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 | 22/09/2022 | 0.0.2   | Detalhamento do User Story US01    | Márlem |
 | 23/09/2022 | 0.0.3   | Atualização do Documento           | Ana Paula|
 | 25/09/2022 | 0.0.4   | Revisão                            | Hiago  |
-| 12/11/2022 | 1.0.0   | Documento completo com o detalhamento de todos os User Stories | Márlem     |
-|
+| 12/10/2022 | 1.0.0   | Documento completo com o detalhamento de todos os User Stories | Márlem     |
+| 10/11/2022 | 1.0.1   | Correção de bugs  | Hiago |
 
 
 
