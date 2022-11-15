@@ -8,14 +8,14 @@ function alterarEstado() {
 
         lampada.classList.remove("apagada");
 
-        lampada.src = "http://i.stack.imgur.com/ybxlO.jpg";
+        lampada.src = "https://i.stack.imgur.com/ybxlO.jpg";
     }else if(lampada.classList.contains("ligada")) {
 
         lampada.classList.add("apagada");
 
         lampada.classList.remove("ligada");
 
-        lampada.src = "http://i.stack.imgur.com/b983w.jpg";
+        lampada.src = "https://i.stack.imgur.com/b983w.jpg";
     }
 }
 
