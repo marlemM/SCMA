@@ -33,7 +33,7 @@ def delete(request, id):
     kit.delete()
     return redirect(home)
 
-
+@require_http_methods(["GET"])
 def detalhar(request):
     kits = Kit.objects.all()
     return render(request, "detalhar.html", {"kits": kits})

@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as login_django
 from django.contrib.auth.decorators import login_required
-from django.views.decorators.http import require_http_methods
+from django.views.decorators.http import require_http_methods, require_safe
 
 @require_http_methods(["GET"])
 def cadastro(request):
@@ -42,6 +42,7 @@ def login(request):
         else:
             return HttpResponse('Email ou senha invalidos')
 
-@login_required(login_url="/auth/login")
+@require_safe
+##@login_required(login_url="/auth/login")
 def  plataforma(request):
     return HttpResponse('plataforma')
