@@ -13,7 +13,6 @@ def cadastro(request):
     else:
         username = request.POST.get('username')
         email = request.POST.get('email')
-        ##matricula = request.POST.get('matricula')
         senha = request.POST.get('senha')
 
         user = User.objects.filter(username=username).first()
@@ -23,7 +22,7 @@ def cadastro(request):
 
         user = User.objects.create_user(username=username, email=email, password=senha)
         user.save()
-        ##ver com Taciano a questão de tirar email e por matricula ou como faz
+
         return HttpResponse('usuario cadastrado com sucesso')
 
 @require_http_methods(["GET"])  
@@ -43,6 +42,5 @@ def login(request):
             return HttpResponse('Email ou senha invalidos')
 
 @require_safe
-##@login_required(login_url="/auth/login")
 def  plataforma(request):
     return HttpResponse('plataforma')
