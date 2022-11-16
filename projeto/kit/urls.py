@@ -9,5 +9,4 @@ urlpatterns = [
     path('update/<int:id>', update, name="update"),
     path('delete/<int:id>', delete, name="delete"),
     path('detalhar/<int:id>', detalhar, name="detalhar")
-
 ]
