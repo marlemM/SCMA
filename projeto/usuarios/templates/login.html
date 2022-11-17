@@ -15,7 +15,7 @@
                 <div class="login-header">
                     <span class="login-title">SCMA</span>
                 </div>
-                <form class="login-form" action="{% url 'login' %}" method="POST">
+                <form class="login-form" action="{% url 'login_post' %}" method="POST">
                     {% csrf_token %}
                     <input type="text" placeholder="Username..." name="username">
                     <br>

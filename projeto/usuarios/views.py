@@ -8,38 +8,40 @@ from django.views.decorators.http import require_http_methods, require_safe
 
 @require_http_methods(['GET'])
 def cadastro(request):
-    if request.method == "GET":
-        return render(request, 'cadastro.html')
-    else:
-        username = request.POST.get('username')
-        email = request.POST.get('email')
-        senha = request.POST.get('senha')
+    return render(request, 'cadastro.html')
 
-        user = User.objects.filter(username=username).first()
+@require_http_methods(['POST'])
+def cadastro_post(request):
+    username = request.POST.get('username')
+    email = request.POST.get('email')
+    senha = request.POST.get('senha')
 
-        if user:
-            return HttpResponse('Já exxiste um usuário com esse username')
+    user = User.objects.filter(username=username).first()
 
-        user = User.objects.create_user(username=username, email=email, password=senha)
-        user.save()
+    if user:
+        return HttpResponse('Já exxiste um usuário com esse username')
 
-        return HttpResponse('usuario cadastrado com sucesso')
+    user = User.objects.create_user(username=username, email=email, password=senha)
+    user.save()
+
+    return HttpResponse('usuario cadastrado com sucesso')
 
 @require_http_methods(['GET'])
 def login(request):
-    if request.method == "GET":
-        return render(request, 'login.html')
+    return render(request, 'login.html')
+        
+@require_http_methods(['POST'])
+def login_post(request):
+    username = request.POST.get('username')
+    senha = request.POST.get('senha')
+
+    user = authenticate(username=username, password=senha)
+
+    if user:
+        login_django(request, user)
+        return HttpResponse('autenticado')
     else:
-        username = request.POST.get('username')
-        senha = request.POST.get('senha')
-
-        user = authenticate(username=username, password=senha)
-
-        if user:
-            login_django(request, user)
-            return HttpResponse('autenticado')
-        else:
-            return HttpResponse('Email ou senha invalidos')
+        return HttpResponse('Email ou senha invalidos')
 
 @require_safe
 def  plataforma(request):
