@@ -6,6 +6,7 @@ from django.contrib.auth import login as login_django
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_http_methods, require_safe
 
+@require_http_methods(['GET'])
 def cadastro(request):
     if request.method == "GET":
         return render(request, 'cadastro.html')
@@ -24,7 +25,7 @@ def cadastro(request):
 
         return HttpResponse('usuario cadastrado com sucesso')
 
-
+@require_http_methods(['GET'])
 def login(request):
     if request.method == "GET":
         return render(request, 'login.html')
@@ -40,6 +41,6 @@ def login(request):
         else:
             return HttpResponse('Email ou senha invalidos')
 
-
+@require_safe
 def  plataforma(request):
     return HttpResponse('plataforma')
