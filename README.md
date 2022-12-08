@@ -11,7 +11,9 @@ git clone https://github.com/marlemM/SCMA.git
 
 ### Passo 2
 Criando ambiente virtual :
+```console
 python3 -m venv .venv
+```
 
 ### Passo 3
 Ativando ambiente virtual:
