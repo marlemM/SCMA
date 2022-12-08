@@ -68,12 +68,12 @@ pip install -r requirerements.txt
 ## Passo a passo - rodando o programa
 ### Passo 1
 A partir do vs code dentro de SCMA
-``` console
+``` 
 cd projeto
 ```
 ### Passo 2
 Já dentro do projeto
-```console
+```
 python manage.py migrate
 ```
 
