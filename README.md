@@ -26,7 +26,7 @@ O SCMA, é um sistema de controle que é responsável por gerenciar todo o mater
 C:\Users\proxx\Desktop\sonar-scanner-4.7.0.2747-windows\bin\sonar-scanner.bat -D sonar.login=b6d0bab1e972644439b6efc872720c910bdbdf3a
 
 
-## passo a passo da execução do projeto
+## Passo a passo da execução do projeto
 
 ### Passo 1
 Criando o clone do repositório do projeto :
@@ -53,10 +53,11 @@ cd SCMA
 ### Passo 5
 Criar arquivo "requirements.txt":
 *No vscode criar um novo arquivo com o seguinte conteúdo:
+````
 django==4.1.4
 python-decouple==3.6
 coverage==6.5.0
-
+````
 ### Passo 6
 Instalar o requirements:
 ```console
@@ -64,18 +65,21 @@ pip install -r requirerements.txt
 ```
 
 
-## Passo a passo rodando o programa
+## Passo a passo - rodando o programa
 ### Passo 1
 A partir do vs code dentro de SCMA
-```cd projeto
+``` console
+cd projeto
 ```
 ### Passo 2
 Já dentro do projeto
-```python manage.py migrate
+```console
+python manage.py migrate
 ```
 
 ### Passo 3
-```python manage.py runserver
+```
+python manage.py runserver
 ```
 
 ### Passo 4
