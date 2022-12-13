@@ -10,7 +10,7 @@
 <body>
     <form method="post">
         {% csrf_token %}
-        <h2>Are you sure you want to remove {{ product.description }} ?</h2>
+        <h2>Are you sure you want to remove {{ item.description }} ?</h2>
         <button type="submit">Confirm</button>
     </form>
 </body>

@@ -8,14 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        {% for product in products %}
-            <a href="{% url 'update_product' product.id %}">
-                <li> {{ product.description }}</li>
-            </a>
-        {% endfor %}
-    </ul>
 
-    <a href="{% url 'create_products' %}">New product</a>
+    <h1>New/Update item</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Save</button>
+    </form>
+
+
+    {% if item %}
+        <a href="{% url 'delete_item' item.id %}">Delete</a>
+    {% endif %}
 </body>
 </html>
