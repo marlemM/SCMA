@@ -39,9 +39,10 @@ def login_post(request):
 
     if user:
         login_django(request, user)
-        return HttpResponse('autenticado')
+        return render(request,'index.html')
     else:
         return HttpResponse('Email ou senha invalidos')
+        
 
 @require_safe
 def  plataforma(request):

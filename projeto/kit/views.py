@@ -5,14 +5,14 @@ from django.views.decorators.http import require_http_methods
 @require_http_methods(["GET"])
 def home(request):
     kits = Kit.objects.all()
-    return render(request, "index.html", {"kits": kits})
+    return render(request, "indexkit.html", {"kits": kits})
 
 @require_http_methods(["POST"])
 def salvar(request):
     vnome = request.POST.get("nome")
     Kit.objects.create(nome=vnome)
     kits = Kit.objects.all()
-    return render(request, "index.html", {"kits": kits})
+    return render(request, "index.htmlkit", {"kits": kits})
 
 @require_http_methods(["GET"])
 def editar(request, id):

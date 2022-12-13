@@ -1,0 +1,62 @@
+{%load static%}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type= "text/css" rel="stylesheet" href="{%static 'css/style.css'%}">
+<style>
+    .titulo{
+        background-color:rgb(189, 64, 15);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h1 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .menu{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        padding: 0.5em, 1em;
+    }
+    .menu p{
+        width: 10%;
+        margin: auto;
+        padding: 0.5em 1em;
+        border: solid #8b9191;
+        border-radius: 0.5em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+</style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/usuarios/static/img/icone.png">
+<title>Pagina Inicial</title>
+</head>
+
+<body style="background-color:#d38a1c">    
+    <div class="titulo">
+        <h1>Sistema de Controle do Material de Apoio</h1><br>
+    </div>
+    <div></div>
+    <div class="menu">
+        <p>ITENS</p>
+        <p><a href="/kit"> KIT</a></p>
+        <p>RESERVA</p>    
+    </div>
+</body>
+</html>
