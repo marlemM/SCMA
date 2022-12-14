@@ -11,13 +11,13 @@
         <h1>Sistema de Controle do Material de Apoio</h1><br>
     </div>
 
-    <p style="font-size: 30px">Editar Kit</p>
+    <p style="font-size: 30px">Editar Item</p>
 
-    {{ kits.id }} - {{ kits.nome }}
+    {{ itens.id }} - {{ itens.nome }}
 
-    <form action="{% url 'update' kits.id %}" method="POST">
+    <form action="{% url 'update' itens.id %}" method="POST">
         {% csrf_token %}
-        <input type="text" name="nome" value="{{kits.nome}}">
+        <input type="text" name="nome" value="{{itens.nome}}">
         <button type="submit">Update</button>
     </form>
 

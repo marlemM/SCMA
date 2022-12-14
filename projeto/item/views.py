@@ -1,39 +1,39 @@
 from django.shortcuts import render, redirect
 from .models import Item
-from .forms import ItemForm
+from django.views.decorators.http import require_http_methods
 
+@require_http_methods(["GET"])
+def home(request):
+    Itens = Item.objects.all()
+    return render(request, "indexitem.html", {"Itens": Itens})
 
-def list_item(request):
-    item = Item.objects.all()
-    return render(request, 'item.html', {'item': item})
+@require_http_methods(["POST"])
+def salvar(request):
+    vnome = request.POST.get("nome")
+    Item.objects.create(nome=vnome)
+    Itens = Item.objects.all()
+    return render(request, "indexitem.html", {"Itens": Itens})
 
+@require_http_methods(["GET"])
+def editar(request, id):
+    Itens = Item.objects.get(id=id)
+    return render(request, "update.html", {"Itens": Itens})
 
-def create_item(request):
-    form = ItemForm(request.POST or None)
-
-    if form.is_valid():
-        form.save()
-        return redirect('list_item')
-
-    return render(request, 'item-form.html', {'form': form})
-
-
-def update_item(request, id):
+@require_http_methods(["POST"])
+def update(request, id):
+    vnome = request.POST.get("nome")
     item = Item.objects.get(id=id)
-    form = ItemForm(request.POST or None, instance=item)
+    item.nome = vnome
+    item.save()
+    return redirect(home)
 
-    if form.is_valid():
-        form.save()
-        return redirect('list_item')
-
-    return render(request, 'item-form.html', {'form': form, 'item': item})
-
-
-def delete_item(request, id):
+@require_http_methods(["GET"])
+def delete(request, id):
     item = Item.objects.get(id=id)
+    item.delete()
+    return redirect(home)
 
-    if request.method == 'POST':
-        item.delete()
-        return redirect('list_item')
-
-    return render(request, 'item-delete-confirm.html', {'item': item})
+@require_http_methods(["GET"])
+def detalhar(request):
+    Itens = Item.objects.all()
+    return render(request, "detalhar.html", {"Itens": Itens})

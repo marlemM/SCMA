@@ -1,12 +1,12 @@
-from django.urls import path
-from .views import list_item, create_item, update_item, delete_item
+from django.contrib import admin
+from django.urls import path, include
+from .views import home, salvar, editar, update, delete, detalhar
 
 urlpatterns = [
-    path('', list_item, name='list_item'),
-    path('new', create_item, name='create_item'),
-    path('update/<int:id>/', update_item, name='update_item'),
-    path('delete/<int:id>/', delete_item, name='delete_item'),
+    path('', home),
+    path('salvar/', salvar, name="salvar"),
+    path('editar/<int:id>', editar, name="editar"),
+    path('update/<int:id>', update, name="update"),
+    path('delete/<int:id>', delete, name="delete"),
+    path('detalhar/<int:id>', detalhar, name="detalhar")
 ]
-
-
-# CRUD - CREATE, READ, UPDATE, DELETE
