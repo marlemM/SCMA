@@ -1,0 +1,39 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit</title>
+</head>
+<body style="background-color:#37eeee">    
+    <div style = "background-color:rgb(50, 126, 197)">
+        <h1>Sistema de Controle do Material de Apoio</h1><br>
+    </div>
+    
+    <p style="font-size: 30px">CADASTRAR KITS</p>
+    <ul>
+        {% for kit in kits %}
+            <li> {{ kit.id }} - {{ kit.nome }} 
+                <a href="{% url 'editar' kit.id %}">Editar</a> 
+                <a href="{% url 'delete' kit.id %}">Deletar</a>
+                <a href="{% url 'detalhar' kit.id%}">Detalhar</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <script src="{%static 'js/detalhar.js' %}"></script>
+    <form action="{% url 'salvar' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="nome">
+        <button type="submit">Salvar</button>
+    </form><br
+    <div id="content">
+        <img id="lampada" class="apagada" src="../static/img/detalhar.png" alt="" title="Apagada">
+    
+        <br>
+    
+        <button id="botao" onclick="alterarEstado();">Detalhar</button>
+    </div>
+</body>
+</html>
