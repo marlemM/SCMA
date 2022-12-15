@@ -5,35 +5,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kit</title>
+    <title>Item</title>
 </head>
-<body style="background-color:#37eeee">    
-    <div style = "background-color:rgb(50, 126, 197)">
-        <h1>Sistema de Controle do Material de Apoio</h1><br>
+<style>
+   
+.boxinicio { 
+    padding:3em 0;
+    background-image: linear-gradient(to bottom, rgb(151, 184, 255), rgb(0, 47, 255));
+    position: relative;
+}
+
+.boxfim { 
+    background-image: linear-gradient(to bottom, rgb(65, 65, 65), rgb(20, 20, 20));
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+.h1{
+    text-align: center;
+    font-size:0.89em; 
+    font-family:'open_sansregular';
+}
+.textofim{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: beige;
+}
+.teste{
+    background-image: "../static/img/fundo.jpeg";
+}
+.boxfundo{
+    background-image: linear-gradient(to bottom, rgba(101, 127, 241), rgb(101, 127, 241));
+}
+.corpo{
+    display: flex;
+    padding: 0% 10%;
+}
+.algo{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    background-color: #a3d6ee;
+    height:320px;
+    width: 350px;
+    overflow-y: scroll;
+    border: solid #a7bbc4;
+}
+.cad{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    background-color: #81c5e4;
+    height:320px;
+    width: 350px;
+    border: solid#a7bbc4;
+    text-align: center;
+}
+body{
+    height: auto;
+    width: auto;
+}
+.p1{
+    text-align: center;
+    font-size: 30px;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 5px 0;
+}
+td{
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+</style>
+<body class="boxfundo">    
+    <div class="teste">
+        <div class="boxinicio h1">
+			<h1>Sistema de Controle do Material de Apoio</h1>
+		</div>
     </div>
-    
-    <p style="font-size: 30px">CADASTRAR ITEM</p>
-    <ul>
-        {% for item in itens %}
-            <li> {{ item.id }} - {{ item.nome }} 
-                <a href="{% url 'editar' item.id %}">Editar</a> 
-                <a href="{% url 'delete' item.id %}">Deletar</a>
-                <a href="{% url 'detalhar' item.id%}">Detalhar</a>
-            </li>
-        {% endfor %}
-    </ul>
-    <script src="{%static 'js/detalhar.js' %}"></script>
-    <form action="{% url 'salvar' %}" method="POST">
-        {% csrf_token %}
-        <input type="text" name="nome">
-        <button type="submit">Salvar</button>
-    </form><br>
-    <div id="content">
-        <img id="lampada" class="apagada" src="../static/img/detalhar.png" alt="" title="Apagada">
-    
-        <br>
-    
-        <button id="botao" onclick="alterarEstado();">Detalhar</button>
+    <div class="corpo">
+        <div class="cad">
+            <form action="{% url 'salvar' %}" method="POST">
+                <p style="font-size: 30px">CADASTRAR ITEM</p>
+                {% csrf_token %}
+                <input type="text" name="nome">
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+        <div class="algo">
+            <table>
+                <th>
+                    <p class="p1"> ITEM</p>
+                </th>
+                <tbody>
+                {% for item in itens %}
+                    <tr> <td>{{ item.id }}</td><td>{{ item.nome }}</td> 
+                        <td><a title="editar" href="{% url 'editar' item.id %}"><img src="../static/img/iconeditar.png"></a></td>
+                        <td><a title="excluir" href="{% url 'delete' item.id %}"><img src="../static/img/iconexcluir.png"></a></td>
+                        <td><a title="detalhar" href="{% url 'detalhar' item.id%}"><img src="../static/img/icondetalhar.png"></a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="boxfim">
+        <p class="textofim">Trabalho de Engenharia de Software II</p>	
     </div>
 </body>
 </html>

@@ -4,20 +4,20 @@ from django.views.decorators.http import require_http_methods
 
 @require_http_methods(["GET"])
 def home(request):
-    Itens = Item.objects.all()
-    return render(request, "indexitem.html", {"Itens": Itens})
+    itens = Item.objects.all()
+    return render(request, "indexitem.html", {"itens": itens})
 
 @require_http_methods(["POST"])
 def salvar(request):
     vnome = request.POST.get("nome")
     Item.objects.create(nome=vnome)
-    Itens = Item.objects.all()
-    return render(request, "indexitem.html", {"Itens": Itens})
+    itens = Item.objects.all()
+    return render(request, "indexitem.html", {"itens": itens})
 
 @require_http_methods(["GET"])
 def editar(request, id):
-    Itens = Item.objects.get(id=id)
-    return render(request, "update.html", {"Itens": Itens})
+    itens = Item.objects.get(id=id)
+    return render(request, "update.html", {"itens": itens})
 
 @require_http_methods(["POST"])
 def update(request, id):
@@ -35,5 +35,5 @@ def delete(request, id):
 
 @require_http_methods(["GET"])
 def detalhar(request):
-    Itens = Item.objects.all()
-    return render(request, "detalhar.html", {"Itens": Itens})
+    itens = Item.objects.all()
+    return render(request, "detalhar.html", {"itens": itens})
