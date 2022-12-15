@@ -21,5 +21,6 @@ urlpatterns = [
     path('', include('usuarios.urls')),
     path('item/', include('item.urls')),
     path('kit/', include('kit.urls')),
+    
 
 ]

@@ -24,7 +24,7 @@ def cadastro_post(request):
     user = User.objects.create_user(username=username, email=email, password=senha)
     user.save()
 
-    return HttpResponse('usuario cadastrado com sucesso')
+    return render(request, 'login.html')
 
 @require_http_methods(['GET'])
 def login(request):
@@ -39,10 +39,13 @@ def login_post(request):
 
     if user:
         login_django(request, user)
-        return render(request,'index.html')
+        return render(request, 'index.html')
     else:
         return HttpResponse('Email ou senha invalidos')
-        
+
+@require_safe
+def home(request):
+    return render(request, 'index.html')
 
 @require_safe
 def  plataforma(request):

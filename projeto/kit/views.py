@@ -17,7 +17,7 @@ def salvar(request):
 @require_http_methods(["GET"])
 def editar(request, id):
     kits = Kit.objects.get(id=id)
-    return render(request, "update.html", {"kits": kits})
+    return render(request, "updatekit.html", {"kits": kits})
 
 @require_http_methods(["POST"])
 def update(request, id):
