@@ -61,7 +61,7 @@ coverage==6.5.0
 ### Passo 6
 Instalar o requirements:
 ```console
-pip install -r requirerements.txt
+pip install -r requirements.txt
 ```
 
 
