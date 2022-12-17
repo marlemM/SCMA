@@ -12,7 +12,9 @@ def salvarK(request):
     vnome = request.POST.get("nome")
     Kit.objects.create(nome=vnome)
     kits = Kit.objects.all()
-    return render(request, "indexkit.html", {"kits": kits})
+    #return render(request, "indexkit.html", {"kits": kits})
+    return redirect('/kit')
+
 
 @require_http_methods(["GET"])
 def editarK(request, id):
@@ -32,8 +34,3 @@ def deleteK(request, id):
     kit = Kit.objects.get(id=id)
     kit.delete()
     return redirect(homeK)
-
-@require_http_methods(["GET"])
-def detalharK(request):
-    kits = Kit.objects.all()
-    return render(request, "detalhar.html", {"kits": kits})

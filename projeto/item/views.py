@@ -12,7 +12,7 @@ def salvarI(request):
     vnome = request.POST.get("nome")
     Item.objects.create(nome=vnome)
     itens = Item.objects.all()
-    return render(request, "indexitem.html", {"itens": itens})
+    return redirect('/item')
 
 @require_http_methods(["GET"])
 def editarI(request, id):
@@ -32,8 +32,3 @@ def deleteI(request, id):
     item = Item.objects.get(id=id)
     item.delete()
     return redirect(homeI)
-
-@require_http_methods(["GET"])
-def detalharI(request):
-    itens = Item.objects.all()
-    return render(request, "detalhar.html", {"itens": itens})

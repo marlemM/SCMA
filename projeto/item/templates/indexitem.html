@@ -103,7 +103,7 @@ td{
     </div>
     <div class="corpo">
         <div class="cad">
-            <form action="{% url 'salvar' %}" method="POST">
+            <form action="{% url 'salvarI' %}" method="POST">
                 <p style="font-size: 30px">CADASTRAR ITEM</p>
                 {% csrf_token %}
                 <input type="text" name="nome">
@@ -118,9 +118,8 @@ td{
                 <tbody>
                 {% for item in itens %}
                     <tr> <td>{{ item.id }}</td><td>{{ item.nome }}</td> 
-                        <td><a title="editar" href="{% url 'editar' item.id %}"><img src="../static/img/iconeditar.png"></a></td>
-                        <td><a title="excluir" href="{% url 'delete' item.id %}"><img src="../static/img/iconexcluir.png"></a></td>
-                        <td><a title="detalhar" href="{% url 'detalhar' item.id%}"><img src="../static/img/icondetalhar.png"></a></td>
+                        <td><a title="editar" href="{% url 'editarI' item.id %}"><img src="../static/img/iconeditar.png"></a></td>
+                        <td><a title="delete" href="{% url 'deleteI' item.id %}"><img src="../static/img/iconexcluir.png"></a></td>
                     </tr>
                 {% endfor %}
                 </tbody>
