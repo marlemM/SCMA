@@ -9,11 +9,13 @@
 <style>
    
 .boxinicio { 
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
     padding:3em 0;
     background-image: linear-gradient(to bottom, rgb(151, 184, 255), rgb(0, 47, 255));
-    position: relative;
 }
-
+   
 .boxfim { 
     background-image: linear-gradient(to bottom, rgb(65, 65, 65), rgb(20, 20, 20));
     width: 100%;
@@ -21,11 +23,20 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    }
+}
 .h1{
-    text-align: center;
+    margin-left: 2em;
+    color: #fff;
     font-size:0.89em; 
     font-family:'open_sansregular';
+}
+a{
+    text-decoration: none;
+}
+
+.sair{
+    float: right;
+    width: auto;
 }
 .textofim{
     text-align: center;
@@ -33,7 +44,7 @@
     color: beige;
 }
 .teste{
-    background-image: "../static/img/fundo.jpeg";
+   background-image: "../static/img/fundo.jpeg";
 }
 .boxfundo{
     background-image: linear-gradient(to bottom, rgba(101, 127, 241), rgb(101, 127, 241));
@@ -96,13 +107,19 @@ border:1;
 border-radius:10px;
 
 }
+.sair{
+    float: right;
+    width: auto;
+}
 
 </style>
 
 <body class="boxfundo">   
     <div class="teste">
-        <div class="boxinicio h1">
-			<h1>Sistema de Controle do Material de Apoio</h1>
+        <div class="boxinicio">
+			<h1><a class="h1" href="/" title="Home">Sistema de Controle do Material de Apoio</a>
+				<a title="Sair" href="{% url 'sair' %}"><img src="../static/img/iconesair.png" class="sair"></a></h1>
+			
 		</div>
     </div>
 
