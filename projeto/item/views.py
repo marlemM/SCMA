@@ -3,37 +3,37 @@ from .models import Item
 from django.views.decorators.http import require_http_methods
 
 @require_http_methods(["GET"])
-def home(request):
+def homeI(request):
     itens = Item.objects.all()
     return render(request, "indexitem.html", {"itens": itens})
 
 @require_http_methods(["POST"])
-def salvar(request):
+def salvarI(request):
     vnome = request.POST.get("nome")
     Item.objects.create(nome=vnome)
     itens = Item.objects.all()
     return render(request, "indexitem.html", {"itens": itens})
 
 @require_http_methods(["GET"])
-def editar(request, id):
+def editarI(request, id):
     itens = Item.objects.get(id=id)
-    return render(request, "update.html", {"itens": itens})
+    return render(request, "updateitem.html", {"itens": itens})
 
 @require_http_methods(["POST"])
-def update(request, id):
+def updateI(request, id):
     vnome = request.POST.get("nome")
     item = Item.objects.get(id=id)
     item.nome = vnome
     item.save()
-    return redirect(home)
+    return redirect(homeI)
 
 @require_http_methods(["GET"])
-def delete(request, id):
+def deleteI(request, id):
     item = Item.objects.get(id=id)
     item.delete()
-    return redirect(home)
+    return redirect(homeI)
 
 @require_http_methods(["GET"])
-def detalhar(request):
+def detalharI(request):
     itens = Item.objects.all()
     return render(request, "detalhar.html", {"itens": itens})

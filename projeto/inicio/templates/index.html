@@ -96,6 +96,9 @@ nav a:focus {
 }
 
 .boxinicio { 
+flex-direction: row;
+text-align: center;
+width: 100%;
 padding:3em 0;
 background-image: linear-gradient(to bottom, rgb(151, 184, 255), rgb(0, 47, 255));
 }
@@ -104,9 +107,13 @@ padding:4em 0;
 background-image: linear-gradient(to bottom, rgb(65, 65, 65), rgb(20, 20, 20));
 }
 .h1{
-    text-align: center;
+	margin-left: 2em;
+	color: #fff;
     font-size:0.89em; 
     font-family:'open_sansregular';
+}
+a{
+	text-decoration: none;
 }
 
 .imagem{
@@ -123,20 +130,28 @@ background-image: linear-gradient(to bottom, rgb(65, 65, 65), rgb(20, 20, 20));
 .teste{
 	background-image: "../static/img/fundo.jpeg";
 }
+.sair{
+	float: right;
+	width: auto;
+}
+
 </style>
 
 <body>
+	{% csrf_token %}
 	<div class="teste">
-		<div class="boxinicio h1">
-			<h1>Sistema de Controle do Material de Apoio</h1>
+		<div class="boxinicio">
+			<h1><a class="h1" href="/" title="Home">Sistema de Controle do Material de Apoio</a>
+				<a title="Sair" href="{% url 'sair' %}"><img src="../static/img/iconesair.png" class="sair"></a></h1>
+			
 		</div>
 		<div class="imagem">
 			<br>
 			<img src="../static/img/Logo.png" height="350px">
 		</div>
-	
+		<br>
 		<nav class="bg line">
-			<a href="../index.html" title="Home">Home</a>
+			<a href="/" title="Home">Home</a>
 			<a href="/kit" title="Kit">Kit</a>
 			<a href="/item" title="Item">Item</a>
 			<a href="#" title="Reservar">Reservar</a>
