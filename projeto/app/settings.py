@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'usuario',
     'kit',
     'inicio',
+    'reserva',
 
 ]
 

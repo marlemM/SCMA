@@ -22,6 +22,5 @@ urlpatterns = [
     path('item/', include('item.urls')),
     path('kit/', include('kit.urls')),
     path('inicio/', include('inicio.urls')),
-    
-
+    path('reserva/', include('reserva.urls')),
 ]

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+</head>
+<style>
+   
+.boxinicio { 
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    padding:3em 0;
+    background-image: linear-gradient(to bottom, rgb(151, 184, 255), rgb(0, 47, 255));
+}
+
+
+.boxfim { 
+    background-image: linear-gradient(to bottom, rgb(65, 65, 65), rgb(20, 20, 20));
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+.h1{
+    margin-left: 2em;
+    color: #fff;
+    font-size:0.89em; 
+    font-family:'open_sansregular';
+}
+a{
+	text-decoration: none;
+}
+.sair{
+	float: right;
+	width: auto;
+}
+.textofim{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: beige;
+}
+.teste{
+    background-image: "../static/img/fundo.jpeg";
+}
+.boxfundo{
+    background-image: linear-gradient(to bottom, rgba(101, 127, 241), rgb(101, 127, 241));
+}
+.corpo{
+    display: flex;
+    padding: 0% 10%;
+}
+.algo{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    background-color: #a3d6ee;
+    height:320px;
+    width: 350px;
+    overflow-y: scroll;
+    border: solid #a7bbc4;
+}
+.cad{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    background-color: #81c5e4;
+    height:320px;
+    width: 350px;
+    border: solid#a7bbc4;
+    text-align: center;
+}
+body{
+    height: auto;
+    width: auto;
+}
+.p1{
+    text-align: center;
+    font-size: 30px;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 5px 0;
+}
+td{
+    padding: 10px 0;
+    text-align: center;
+}
+</style>  
+
+<body class="boxfundo">    
+    <div class="teste">
+        <div class="boxinicio">
+			<h1><a class="h1" href="/" title="Home">Sistema de Controle do Material de Apoio</a>
+				<a title="Sair" href="{% url 'sair' %}"><img src="../static/img/iconesair.png" class="sair"></a></h1>
+			
+		</div>
+    </div>
+    <div class="corpo">
+        <div class="cad">
+            <form action="{% url 'salvar' %}" method="POST">
+                <p style="font-size: 30px">RESERVAR KITS</p>
+                {% csrf_token %}
+                <input type="text" name="nome">
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+        <div class="algo">
+            <table>
+                <th>
+                    <p class="p1"> KITs DISPONÍVEL</p>
+                </th>
+                <tbody>
+                {% for kit in kits %}
+                    <tr> <td>{{ kit.id }}</td><td>{{ kit.nome }}</td> 
+                        <td><a href="{% url 'editar' kit.id %}"><img src="../static/img/iconeditar.png"></a></td>
+                        <td><a href="{% url 'delete' kit.id %}"><img src="../static/img/iconexcluir.png"></a></td>
+                        <td><a href="{% url 'detalhar' kit.id%}"><img src="../static/img/icondetalhar.png"></a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="boxfim">
+        <p class="textofim">Trabalho de Engenharia de Software II</p>	
+    </div>
+</body>
+</html>

@@ -4,9 +4,9 @@ from .views import homeK, salvarK, editarK, updateK, deleteK, detalharK
 
 urlpatterns = [
     path('', homeK),
-    path('salvar/', salvarK, name="salvar"),
-    path('editar/<int:id>', editarK, name="editar"),
-    path('update/<int:id>', updateK, name="update"),
-    path('delete/<int:id>', deleteK, name="delete"),
-    path('detalhar/<int:id>', detalharK, name="detalhar")
+    path('salvark/', salvarK, name="salvar"),
+    path('editark/<int:id>', editarK, name="editar"),
+    path('updatek/<int:id>', updateK, name="update"),
+    path('deletek/<int:id>', deleteK, name="delete"),
+    path('detalhark/<int:id>', detalharK, name="detalhar")
 ]
