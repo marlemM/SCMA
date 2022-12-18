@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kit</title>
+    <title>Update</title>
 </head>
 <style>
    
@@ -15,7 +15,7 @@
     padding:3em 0;
     background-image: linear-gradient(to bottom, rgb(151, 184, 255), rgb(0, 47, 255));
 }
-
+   
 .boxfim { 
     background-image: linear-gradient(to bottom, rgb(65, 65, 65), rgb(20, 20, 20));
     width: 100%;
@@ -23,7 +23,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    }
+}
 .h1{
     margin-left: 2em;
     color: #fff;
@@ -31,11 +31,12 @@
     font-family:'open_sansregular';
 }
 a{
-	text-decoration: none;
+    text-decoration: none;
 }
+
 .sair{
-	float: right;
-	width: auto;
+    float: right;
+    width: auto;
 }
 .textofim{
     text-align: center;
@@ -43,7 +44,7 @@ a{
     color: beige;
 }
 .teste{
-    background-image: "../static/img/fundo.jpeg";
+   background-image: "../static/img/fundo.jpeg";
 }
 .boxfundo{
     background-image: linear-gradient(to bottom, rgba(101, 127, 241), rgb(101, 127, 241));
@@ -52,22 +53,21 @@ a{
     display: flex;
     padding: 0% 10%;
 }
-.algo{
-    display: flex;
-    flex-wrap: nowrap;
-    margin: auto;
-    background-color: #a3d6ee;
-    height:320px;
-    width: 350px;
-    overflow-y: scroll;
-    border: solid #a7bbc4;
-}
-.cad{
+.up{
     display: flex;
     flex-wrap: nowrap;
     margin: auto;
     background-color: #81c5e4;
-    height:320px;
+    height:180px;
+    width: 200px;
+    text-align: center;
+}
+.cad{
+    display: block;
+    flex-wrap: nowrap;
+    margin: auto;
+    background-color: #81c5e4;
+    height:280px;
     width: 350px;
     border: solid#a7bbc4;
     text-align: center;
@@ -88,44 +88,57 @@ td{
     padding: 10px 0;
     text-align: center;
 }
-</style>  
 
-<body class="boxfundo">    
+.p2{
+    font-size: 30px;
+}
+
+.login { 
+
+width: auto; 
+float: 30px;; 
+padding:0.4em 1.3em; 
+margin-top: 1em;
+font-family:'open_sansregular'; 
+font-size:1em; 
+background-color:#117dc0; 
+color:#fff; 
+border:1; 
+border-radius:10px;
+
+}
+.sair{
+    float: right;
+    width: auto;
+}
+
+</style>
+
+<body class="boxfundo">   
     <div class="teste">
         <div class="boxinicio">
 			<h1><a class="h1" href="/" title="Home">Sistema de Controle do Material de Apoio</a>
-				<a title="Sair" href="{% url 'sair' %}"><img src="../static/img/iconesair.png" class="sair"></a></h1>
+				<a title="Sair" href="{% url 'sair' %}"><img src="/static/img/iconesair.png" class="sair"></a></h1>
 			
 		</div>
     </div>
+
+    <p  class="p1">Detalhar Kit</p>
+
     <div class="corpo">
         <div class="cad">
-            <form action="{% url 'salvar' %}" method="POST">
-                <p style="font-size: 30px">CADASTRAR KITS</p>
-                {% csrf_token %}
-                <input type="text" name="nome">
-                <button type="submit">Salvar</button>
-            </form>
-        </div>
-        <div class="algo">
-            <table>
-                <th>
-                    <p class="p1"> KIT</p>
-                </th>
-                <tbody>
-                {% for kit in kits %}
-                    <tr> <td>{{ kit.id }}</td><td>{{ kit.nome }}</td> 
-                        <td><a href="{% url 'editar' kit.id %}"><img src="../static/img/iconeditar.png"></a></td>
-                        <td><a href="{% url 'delete' kit.id %}"><img src="../static/img/iconexcluir.png"></a></td>
-                    </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+            <p class="p2"> {{ kits.id }} - {{ kits.nome }}
+            <div class="up">
+                <form action="{% url 'detalhar' reserva.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="text" name="nome" value="{{reservanome}}">
+                </form>
+            </div>
         </div>
     </div>
-    
+
     <div class="boxfim">
         <p class="textofim">Trabalho de Engenharia de Software II</p>	
     </div>
-</body>
-</html>
+
+</body> 

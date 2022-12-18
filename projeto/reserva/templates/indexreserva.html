@@ -111,13 +111,12 @@ td{
         <div class="algo">
             <table>
                 <th>
-                    <p class="p1"> KITs DISPONÍVEL</p>
+                    <p class="p1"> KIT disp</p>
                 </th>
                 <tbody>
                 {% for kit in kits %}
                     <tr> <td>{{ kit.id }}</td><td>{{ kit.nome }}</td> 
-                        <td><a href="{% url 'editar' kit.id %}"><img src="../static/img/iconeditar.png"></a></td>
-                        <td><a href="{% url 'delete' kit.id %}"><img src="../static/img/iconexcluir.png"></a></td>
+                        <td><a href="{% url 'detalhar' kit.id %}"><img src="../static/img/icondetalhar.png"></a></td>
                     </tr>
                 {% endfor %}
                 </tbody>
