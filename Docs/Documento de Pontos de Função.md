@@ -37,3 +37,13 @@ os **ALI**s (Arquivos Lógicos Internos) com o valor de *35 PF* cada e os **AIE*
 ### Duração e custo considerando produtividade 8h/PF e Ci = 120 PF 
 120 PF * 8h/PF= 960H
 960h/8h = 120 Dias
+
+### Duração e custo considerando produtividade 1h/PF e Ci = 84 PF
+
+| Entidades Relacionadas     |  PF  | Duração | Custo para o projeto| 
+|--------------------------- |------| ------- | --------------------|
+| Administrador              |  15  |   15h   |       R$ 81         |
+| Usuário                    |  45  |   35h   |       R$ 189        |
+| Projeto                    |  50  |   42h   |       R$ 501        |
+| Laboratório                |  10  |   15h   |       R$ 81         |
+| Total                      |  120 |   107h  |       R$ 852        |
