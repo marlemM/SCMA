@@ -47,3 +47,16 @@ os **ALI**s (Arquivos Lógicos Internos) com o valor de *35 PF* cada e os **AIE*
 | Projeto                    |  50  |   42h   |       R$ 501        |
 | Laboratório                |  10  |   15h   |       R$ 81         |
 | Total                      |  120 |   107h  |       R$ 852        |
+
+## Contagem Estimativa (Ce)
+
+Na Ce todas as funções de dados são classificados como baixa complexidade.
+
+| ALI/AIE           | Entidades Relacionadas     | PF |
+|------------------ |--------------------------- |----|
+| AIE Administrador | Administrador              | 5  |
+| ALI Usuário       | Usuário                    | 7  |
+| ALI Projeto       | Projeto                    | 7  |
+| ALI Laboratório   | Laboratório                | 7  |
+| ALI Endereço      | Endereço                   | 7  |
+|                   | Total de Dados             | 33 |
