@@ -41,6 +41,13 @@ Data       |    Versão   |   Descrição        |  Autor
 21/09/2022 | 1.0         | Documento inicial  |  Marlem
 22/09/2022 | 1.1         | Formatação do texto |  Ana Paula
 29/09/2022 | 1.2         | Adição de requisitos | Hiago
+18/10/2022 | 1.3         | Nova documentação, novos requisitos e adição do sonar  |  Hiago
+09/11/2022 | 1.4         | Novo crud, adição de required methods |  Marlem
+08/12/2022 | 1.4.1       | Atualização da documentação geral | Ana Paula
+17/12/2022 | 1.5         | Implementação de front-end com novo crud e correção de cruds anteriores| Marlem
+18/12/2022 | 1.5.1       | Nova atualização de documentação geral e documento de visão | Ana Paula
+19/12/2022 | 1.5.2       | Refinamento de documentação e ajustes gerais | Hiago
+
 
 ## Lista de Requisitos Funcionais
 
