@@ -3,14 +3,9 @@
 Documento construído a partir do do **Modelo BSI - Doc 001 - Documento de Visão** que pode ser encontrado no
 link: https://docs.google.com/document/d/1DPBcyGHgflmz5RDsZQ2X8KVBPoEF5PdAz9BBNFyLa6A/edit?usp=sharing
 
+## Descrição do Projeto
 
-## Histórico de Revisões 
-
-Data       |    Versão   |   Descrição        |  Autor
----------  | ----------- | ------------------ | ---------
-21/09/2022 | 1.0         | Documento inicial  |  Marlem
-22/09/2022 | 1.1         | Formatação do texto |  Ana Paula
-29/09/2022 | 1.2         | Adição de requisitos | Hiago
+O SCMA, é um sistema de controle que é responsável por gerenciar todo o material de apoio utilizados pelos docentes do Ceres Caicó, a fim de eliminar o controle destes materiais através de planilhas em papel , reduzindo o consumo de material , agilizando o processo e permitindo um maior controle do patrimônio.
 
 ## Equipe e Definição de Papéis
 
@@ -29,12 +24,6 @@ Ana Paula  | Gestão de RH, Desenvolvedor Python, Administração |
 Hiago      | Desenvolvedor Java,cursando graduação em Sistema de informação  |
 Márlem     | Analista de redes, cursando graduação em Sistema de informação |
 
-
-## Descrição do Projeto
-
-O SCMA, é um sistema de controle que é responsável por gerenciar todo o material de apoio utilizados pelos docentes do Ceres Caicó, a fim de eliminar o controle destes materiais através de planilhas em papel , reduzindo o consumo de material , agilizando o processo e permitindo um maior controle do patrimônio.
-
-
 ## Perfis dos Usuários
 
 O sistema poderá ser utilizado por três tipos de usuários. Temos os seguintes perfis/atores:
@@ -44,6 +33,14 @@ Perfil                                 | Descrição   |
 Administrador | Este usuário realiza os cadastros base e pode realizar qualquer função.
 Secretário | Este usuário realiza empréstimos , reserva de kit ou item , verifica disponibilidade de material e necessidade de aquisição de materiais.
 Docentes | Este usuário pode retirar kit de apoio e realizar a devolução,verificar disponibilidade de kit, etc.
+
+## Histórico de Revisões 
+
+Data       |    Versão   |   Descrição        |  Autor
+---------  | ----------- | ------------------ | ---------
+21/09/2022 | 1.0         | Documento inicial  |  Marlem
+22/09/2022 | 1.1         | Formatação do texto |  Ana Paula
+29/09/2022 | 1.2         | Adição de requisitos | Hiago
 
 ## Lista de Requisitos Funcionais
 
