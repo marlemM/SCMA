@@ -17,8 +17,7 @@ os **ALI**s (Arquivos Lógicos Internos) com o valor de *35 PF* cada e os **AIE*
 
 ### Modelo de Dados 
 
-```mermaid
-erDiagram
+```mermaiderDiagram
     Usuario }o--|{ Cadastro : login
     Usuario ||--|| Item : Reserva
     Usuario }|--o{ Kit : Reserva
@@ -34,3 +33,7 @@ erDiagram
 | ALI Laboratorio | Laboratorio            | 35 PF         |
 | AIE Endereço    | Endereço               | 15 PF         |
 | **Total**       | **Ci**                 | **120 PF**    |
+
+### Duração e custo considerando produtividade 8h/PF e Ci = 120 PF 
+120 PF * 8h/PF= 960H
+960h/8h = 120 Dias
