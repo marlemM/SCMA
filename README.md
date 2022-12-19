@@ -84,3 +84,20 @@ python manage.py runserver
 
 ### Passo 4
 No terminal aparece o caminho, como omouse em cima desse caminho , segurar o ctrl e clicar para abrir o navegador.
+
+
+## Passo a passo - Teste
+
+### Passo 1 
+```
+pip install coverage
+
+```
+### Passo 2
+```
+coverage html
+```
+### Passo 3
+```
+coverage run manage.py test 
+```
