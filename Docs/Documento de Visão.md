@@ -49,25 +49,24 @@ Docentes | Este usuário pode retirar kit de apoio e realizar a devolução,veri
 
 Requisito                                 | Descrição   | Ator |
 ---------                                 | ----------- | ---------- |
-| RF001 - Cadastrar usuário | O sistema deve ser capaz de realizar um cadastro de usuário. | Administrador |
-| RF002 - Buscar usuário | Deve ser capaz de realizar uma busca com os dados do usuário. | Administrador |
-| RF003 - Alterar usuário | Deve ser possível editar informações cadastradas. | Administrador |
+| RF001 - Cadastrar usuário | O usuário possui os atributos nome, email e senha. | Administrador |
+| RF002 - Buscar usuário | A busca deve ser feita a partir do nome do usuário . | Administrador |
+| RF003 - Alterar usuário | A alteração permite editar informações cadastradas do usuário. | Administrador |
 | RF004 - Deletar usuário | Deve ser possível apagar um usuário cadastrado. | Administrador |
-| RF005 - Cadastrar item | O sistema deve ser capaz de cadastrar determinado item. | Secretário |
+| RF005 - Cadastrar item | O cadastroé feito a partir das informações do item como código  e descrição e tipo. | Secretário |
 | RF006 - Tipo do item | Durante o cadastro do item, deve ser possível escolher o tipo do item. | Secretário |
 | RF007 - Buscar item | Deve ser possível fazer uma busca entre os itens cadastrados no sistema. | Secretário, Docente |
 | RF008 - Alterar item | Deve ser possível alterar o as informações do item cadastrado. | Secretário |
 | RF009 - Excluir item | Deve ser possível excluir o item do sistema caso ele não esteja mais em posse do apoio pedagógico. | Secretário |
 | RF010 - Disponibilidade do item | Após o determinado item ser encontrado, o sistema deve exibir se eles está disponível para a reserva ou não. | Secretário, Docente |
-| RF011 - Reserva de item | O usuário deve ser capaz de realizar a reserva do item caso ele esteja disponível. | Docente |
+| RF011 - Reserva de item | A reserva é feita mediante a disponibilidade do item . | Docente |
 | RF012 - Kit padrão | O sistema deve possuir um kit pré-cadastrado. exemplo: kit básico. | Administrador, Secretário |
 | RF013 - Cadastrar kit | Deve ser possível fazer o cadastro de novos kits. que atenda as necessidades de determinado evento ou aula. | Secretário |
 | RF014 - Alterar kit | Deve ser possível alterar as informações de um kit já cadastrado. com a exceção do pré-cadastrado. | Secretário |
 | RF015 - Excluir kit | Deve ser possível excluir um kit antes cadastrado. | Secretário |
 | RF016 - Buscar kit | Deve ser possível pesquisar se determinado kit no sistema. Exemplo: kit aula. | Secretário, Docente |
 | RF017 - Disponibilidade do kit | Após a busca de determinado kit, o sistema deve exibir se o mesmo está disponível ou não | Secretário, Docente |
-| RF018 - Reserva de kit | O sistema deve ter a funcionalidade de fazer uma reserva de determinado kit, caso o mesmo esteja disponível. | Docente |
-| RF019 - Multa acumulativa | O sistema deve possuir um funcionalidade de multa caso o item ou kit não seja devolvido após o seu uso. | Secretário |
+| RF018 - Reserva de kit | A reserva de determinado kit é feita caso o mesmo esteja disponível. | Docente |
 
 ### Modelo Conceitual
 
