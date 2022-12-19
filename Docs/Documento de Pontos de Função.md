@@ -60,3 +60,27 @@ Na Ce todas as funções de dados são classificados como baixa complexidade.
 | ALI Laboratório   | Laboratório                | 7  |
 | ALI Endereço      | Endereço                   | 7  |
 |                   | Total de Dados             | 33 |
+
+
+Na Ce todas as operações elementares são classificadas como de média complexidade: 
+**EE** tem 4 PF e **SE** tem 5 PF.
+
+
+| Operação                | Tipo | Complexidade    |  PF  |
+|-------------------------|------|-----------------|------|
+| Cadastrar Usuário       |  EE  | Média           |  4   |
+| Deletar Usúario         |  EE  | Média           |  4   |
+| Editar Usúario          |  EE  | Média           |  4   |
+| Cadastrar Item          |  EE  | Média           |  4   |
+| Deletar Item            |  EE  | Média           |  4   |
+| Editar Item             |  EE  | Média           |  4   |
+| Cadastrar Kit           |  EE  | Média           |  4   |
+| Deletar Kit             |  EE  | Média           |  4   |
+| Editar Kit              |  EE  | Média           |  4   |
+| Reservar Item           |  SE  | Média           |  5   |
+| Reservar Kit            |  SE  | Média           |  5   |
+|                         |      | Total           |  46  |
+
+Tamanho Funcional: Dados + Operações
+
+__Ce__ = 33 PF + 46 PF = 79 PF
