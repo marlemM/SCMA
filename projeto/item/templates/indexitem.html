@@ -97,7 +97,7 @@ td{
     <div class="teste">
         <div class="boxinicio">
 			<h1><a class="h1" href="/" title="Home">Sistema de Controle do Material de Apoio</a>
-				<a title="Sair" href="{% url 'sair' %}"><img src="../static/img/iconesair.png" class="sair"></a></h1>
+				<a title="Sair" href="{% url 'sair' %}"><img src="../static/img/iconesair.png"  alt="icone sair" class="sair"></a></h1>
 			
 		</div>
     </div>
@@ -118,8 +118,8 @@ td{
                 <tbody>
                 {% for item in itens %}
                     <tr> <td>{{ item.id }}</td><td>{{ item.nome }}</td> 
-                        <td><a title="editar" href="{% url 'editarI' item.id %}"><img src="../static/img/iconeditar.png"></a></td>
-                        <td><a title="delete" href="{% url 'deleteI' item.id %}"><img src="../static/img/iconexcluir.png"></a></td>
+                        <td><a title="editar" href="{% url 'editarI' item.id %}"><img src="../static/img/iconeditar.png" alt="icone de editar" ></a></td>
+                        <td><a title="delete" href="{% url 'deleteI' item.id %}"><img src="../static/img/iconexcluir.png" alt="icone de excluir"></a></td>
                     </tr>
                 {% endfor %}
                 </tbody>
