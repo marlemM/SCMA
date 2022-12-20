@@ -65,6 +65,8 @@
                     <form action="{% url 'cadastrar_livro' %}" method="POST" enctype="multipart/form-data">
                       {% csrf_token %}
                       <table>
+                        <caption>{{tabela}}</caption>
+                        <th></th>
                         {{form.as_table}}
                       </table>
                       
@@ -77,6 +79,8 @@
                 <div style="display: none;" id="categoria">
                   <form action="{% url 'cadastrar_categoria' %}" method="POST">{% csrf_token %}
                     <table>
+                      <caption>{{tabela1}}</caption>
+                      <th></th>
                       {{form_categoria.as_table}}
                     </table>
                     <input type="hidden" name="usuario" value="{{usuario_logado}}">

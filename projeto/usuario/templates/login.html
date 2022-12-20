@@ -114,8 +114,7 @@
     transition:0.4s; 
     background-color:#0085d5; 
     border-top:1px #e9e9e9 solid; 
-    display:inline-block;
-    transition:0.4s; 
+    display:inline-block; 
 
 }
 
@@ -255,7 +254,7 @@
           <section class="boxLogin container">
             <div class="content">
                 <form method="POST" class="login"action="{% url 'valida_login' %}">{% csrf_token %}
-                  <h1><i class="icon icon-key-1"></i> SCMA</h1>
+                  <h1><em class="icon icon-key-1"></em> SCMA</h1>
                   <div class="padding">
                     <label>Email</label>
                     <input name="email" class="form-control" type="text" placeholder="Email...">
