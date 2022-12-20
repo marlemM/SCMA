@@ -105,15 +105,32 @@ body{
 
     <div class="corpo">
         <div class="cad">
-            <p class="p2"> {{ kits.id }} - {{ kits.nome }}
+            <p class="p2"> {{ kit.id }} - {{ kit.nome }}
             <div class="up">
-                <form action="{% url 'update' kits.id %}" method="POST">
+                <form action="{% url 'update' kit.id %}" method="POST">
                     {% csrf_token %}
                     <input type="text" name="nome" value="{{kits.nome}}">
                     <button type="submit">Update</button>
                 </form>
             </div>
         </div>
+        <div class="cad">
+            <form action="{% url 'preencher' kit.id %}" method="POST">
+                <p style="font-size: 30px">PREENCHER KIT</p>
+                {% csrf_token %}
+                <label for="preencher">Kit:</label>
+                <select name="preenche" id="preenche">
+                    <option value="none"></option>
+                {% for item in itens %}
+                    {% if item.disp == True%}
+                    <option value={{item.id}}>{{item.id}} - {{item.nome}}</option>
+                    {%endif%}
+                {%endfor%}
+                </select>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+        
     </div>
 
     <div class="boxfim">

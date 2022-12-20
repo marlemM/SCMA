@@ -101,11 +101,33 @@ td{
     </div>
     <div class="corpo">
         <div class="cad">
-            <form action="{% url 'salvar' %}" method="POST">
+            <form action="{% url 'reservar' %}" method="POST">
                 <p style="font-size: 30px">RESERVAR KITS</p>
                 {% csrf_token %}
-                <input type="text" name="nome">
-                <button type="submit">Salvar</button>
+                <label for="reserv">Kit:</label>
+                <select name="reserv" id="reserv">
+                    <option value="none"></option>
+                {% for kit in kits %}
+                    {% if kit.reservado == False %}
+                        <option value={{kit.id}}>{{kit.id}} - {{kit.nome}}</option>
+                    {%endif%}
+                {%endfor%}
+                </select>
+                <button type="submit">Reservar</button>
+            </form>
+            <form action="{% url 'devolver' %}" method="POST">
+                <p style="font-size: 30px">DEVOLVER KITS</p>
+                {% csrf_token %}
+                <label for="devolve">Kit:</label>
+                <select name="devolve" id="devolve">
+                    <option value="none"></option>
+                {% for kit in kits %}
+                    {% if kit.reservado == True %}
+                        <option value={{kit.id}}>{{kit.id}} - {{kit.nome}}</option>
+                    {%endif%}
+                {%endfor%}
+                </select>
+                <button type="submit">Devolver</button>
             </form>
         </div>
         <div class="algo">
@@ -116,9 +138,28 @@ td{
                 </th>
                 <tbody>
                 {% for kit in kits %}
+                    {% if kit.reservado == False %}
+                    <tr> <td>{{ kit.id }}</td><td>{{ kit.nome }}</td> 
+                        <td><a href="#"><img src="../static/img/icondetalhar.png" alt="icone de detalhar" ></a></td>
+                    </tr>
+                    {%endif%}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="algo">
+            <table>
+                <caption>{{tabela10}}</caption>
+                <th>
+                    <p class="p1"> KIT reservados</p>
+                </th>
+                <tbody>
+                {% for kit in kits %}
+                    {% if kit.reservado == True %}
                     <tr> <td>{{ kit.id }}</td><td>{{ kit.nome }}</td> 
                         <td><a href="{% url 'detalhar' kit.id %}"><img src="../static/img/icondetalhar.png" alt="icone de detalhar" ></a></td>
                     </tr>
+                    {%endif%}
                 {% endfor %}
                 </tbody>
             </table>
