@@ -71,6 +71,9 @@ Requisito                                 | Descrição   | Ator |
 | RF016 - Buscar kit | Deve ser possível pesquisar se determinado kit no sistema. Exemplo: kit aula. | Secretário, Docente |
 | RF017 - Disponibilidade do kit | Após a busca de determinado kit, o sistema deve exibir se o mesmo está disponível ou não | Secretário, Docente |
 | RF018 - Reserva de kit | A reserva de determinado kit é feita caso o mesmo esteja disponível. | Docente |
+| RF019	- Realizar emprestimo de kit de apoio |O empréstimo tem código,nome do usuário, data de emprestimo e data de devolução.  | Secretário |
+| RF020	- Devolução de kit de apoio |A devolução tem o código do empréstimo, nome do usuário e data da efetiva devolução. | Secretário |
+| RF021	- Realizar Reserva |  A reserva tem os itens escolidos e a data desejada para retirada.  | Secretário, Docente |
 
 ### Modelo Conceitual
 
