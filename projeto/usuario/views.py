@@ -3,19 +3,24 @@ from django.http import HttpResponse
 from .models import Usuario
 from django.shortcuts import redirect
 from hashlib import sha256
+from django.views.decorators.http import require_http_methods, require_safe
 
+@require_http_methods(["GET"])
 def login(request):
     if request.session.get('usuario'):
         return redirect('/inicio/')
     status = request.GET.get('status')
     return render(request, 'login.html', {'status': status})
 
+
+@require_http_methods(["GET"])
 def cadastro(request):
     if request.session.get('usuario'):
         return redirect('/inicio/')
     status = request.GET.get('status')
     return render(request, 'cadastro.html', {'status': status})
 
+@require_http_methods(["POST"])
 def valida_cadastro(request):
     nome = request.POST.get('nome')
     email = request.POST.get('email')
@@ -39,6 +44,7 @@ def valida_cadastro(request):
     except:
         return redirect('/cadastro/status=4')
 
+@require_http_methods(["POST"])
 def valida_login(request):
     email = request.POST.get('email')
     senha = request.POST.get('senha')
@@ -51,6 +57,7 @@ def valida_login(request):
         request.session['usuario'] = usuario[0].id
         return redirect(f'/inicio/')
 
+@require_safe
 def sair(request):
     request.session.flush()
     return redirect('/')
