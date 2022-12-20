@@ -1,3 +1,15 @@
 [run]
 source= .
 omit= ./.venv/*, ./.env, */migrations/*, */urls.py, manage.py, */settings.py, */tests/*, */__init__.py, */wsgi.py, */asgi.py
+
+[tox]
+envlist = py39
+skipsdist = True
+ 
+[testenv]
+deps =
+    pytest
+    coverage
+commands = pytest --cov=projeto --cov-report=xml --cov-config=tox.ini --cov-branch
+ 
+[coverage:run]

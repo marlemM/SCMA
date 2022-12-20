@@ -19,19 +19,22 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 | 25/09/2022 | 0.0.4   | Revisão                            | Hiago  |
 | 12/10/2022 | 1.0.0   | Documento completo com o detalhamento de todos os User Stories | Márlem     |
 | 10/11/2022 | 1.0.1   | Correção de bugs  | Hiago |
+| 20/12/2022 | 1.0.2   | Atualização e correção do documento | Ana Paula |
 
 
 
-### User Story US01 - Cadastrar Centro
+### User Story US01 - Manter Usuário
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
-| **Descrição** | O usuário administrador faz o cadastro do centro que tem código ,sigla , nome e endereço. |
+| **Descrição** | O sistema deve manter um cadastro de usuário que tem acesso ao sistema via login e senha. Um usuário tem os atributos nome, matrícula ,data de nascimento e mail.O usuário pode se registrar no sistema. O usuário administrador pode realizar as operações de adicionar, alterar, remover e listar os usuários comuns do sistema.|
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF01          | Cadastro de  Centro |
-|
+| RF001         | Cadastrar usuário	  |
+| RF002         | Buscar usuário	    |
+| RF003         | Alterar usuário	    |
+| RF004         | Deletar usuário     |
 | 
 
 |                           |                                     |
@@ -46,7 +49,7 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 | **Testador**              | Ana Paula                           | 
 
 
-### User Story US02 - Manter item de kit de Apoio
+### User Story US02 - Manter item 
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
@@ -54,8 +57,13 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF02          | Manter cadastro de  item de kit de apoio  |
-| 
+| RF005         |Cadastrar item	           |
+| RF006         |Tipo do item	             |
+| RF007         |Buscar item               |
+| RF008         |Alterar item	             |
+| RF009         |Excluir item              |
+| RF010         |Disponibilidade do item   |
+| RF011         | Reserva de item          | 
 
 |                           |                                     |
 | ------------------------- | ----------------------------------- | 
@@ -68,7 +76,7 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 | **Revisor**               | Márlem                              | 
 | **Testador**              | Ana Paula                           | 
 
-### User Story US03 - Manter kit de Apoio
+### User Story US03 - Manter kit 
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
@@ -76,8 +84,13 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF03          | Manter cadastro  de kit de apoio  |
-| 
+| RF012         | Kit padrão                        |
+| RF013         | Cadastrar kit	                    |
+| RF014         | Alterar kit	                      |
+| RF015         | Excluir kit	                      |
+| RF016         | Buscar kit	                      |
+| RF017         | Disponibilidade do kit	          |
+| RF018         | Reserva de kit                    |
 
 |                           |                                     |
 | ------------------------- | ----------------------------------- | 
@@ -100,9 +113,9 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF04          | Realizar emprestimo de kit de apoio       |
-| RF05          | Devolução de kit de apoio |
-| RF06          | Realizar Reserva     |
+| RF019         | Realizar emprestimo de kit de apoio     |
+| RF020         | Devolução de kit de apoio               |
+| RF021         | Realizar Reserva                        |
 
 |                           |                                     |
 | ------------------------- | ----------------------------------- | 
