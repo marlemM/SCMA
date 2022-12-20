@@ -24,7 +24,8 @@ def reservar(request):
     kit.reservado = True
     kit.save()
     return redirect(homeR)
-
+    
+@require_http_methods("POST")
 def devolver(request):
     id_kit = request.POST.get("devolve")
     nome_devolve = Kit.objects.get(id=id_kit).nome
