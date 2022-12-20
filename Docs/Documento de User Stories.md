@@ -22,16 +22,18 @@ Modelo de documento baseado nas características do processo easYProcess (YP).
 
 
 
-### User Story US01 - Cadastrar Centro
+### User Story US01 - Manter Usuário
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
-| **Descrição** | O usuário administrador faz o cadastro do centro que tem código ,sigla , nome e endereço. |
+| **Descrição** | O sistema deve manter um cadastro de usuário que tem acesso ao sistema via login e senha. Um usuário tem os atributos nome, matrícula ,data de nascimento e mail.O usuário pode se registrar no sistema. O usuário administrador pode realizar as operações de adicionar, alterar, remover e listar os usuários comuns do sistema.|
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
-| RF01          | Cadastro de  Centro |
-|
+| RF001         | Cadastrar usuário	  |
+| RF002         | Buscar usuário	    |
+| RF003         | Alterar usuário	    |
+| RF004         | Deletar usuário     |
 | 
 
 |                           |                                     |
