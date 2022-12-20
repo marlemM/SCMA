@@ -2,7 +2,7 @@
 
 Abaixo apresentamos o modelo conceitual usando o **YUML**.
 
- ![Modelo UML](digrama_scma.png)
+ ![Modelo UML](diagrama_scma.png)
 
 ## Código do Modelo do Sistema SCMA
 
