@@ -78,7 +78,7 @@ Abaixo apresentamos o modelo conceitual usando o **YUML**.
 
  ![Modelo UML](Yuml/diagrama_scma.png)
 
-O código que gera o diagrama está [Aqui!](Yuml/diagrama_scma.md). O detalhamento dos modelos conceitual e de dados do projeto estão no [Documento de Modelos](Modelo de Dados.md).
+O código que gera o diagrama está [Aqui!](Yuml/diagrama_scma.md). O detalhamento dos modelos conceitual e de dados do projeto estão no [Modelo de Dados](Modelo de Dados.md).
 
 #### Descrição das Entidades
 
