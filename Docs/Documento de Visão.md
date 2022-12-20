@@ -76,7 +76,7 @@ Requisito                                 | Descrição   | Ator |
 
 Abaixo apresentamos o modelo conceitual usando o **YUML**.
 
- ![Modelo UML](diagrama_scma.png)
+ ![Modelo UML](Yuml/diagrama_scma.png)
 
 O código que gera o diagrama está [Aqui!](Yuml/diagrama_scma.md). O detalhamento dos modelos conceitual e de dados do projeto estão no [Documento de Modelos](Modelo de Dados.md).
 
